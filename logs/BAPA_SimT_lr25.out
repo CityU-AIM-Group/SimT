@@ -1,0 +1,1325 @@
+Submitted from:/home/xiaoqiguo2/OpensetNTM on node:login
+Running on node node3
+Allocate Gpu Units:0
+Leanring_rate:  0.00025
+Leanring_rate_T:  0.0025
+Open-set class:  15
+Threshold_high:  0.8
+Threshold_low:  0.2
+lambda_Place:  0.1
+lambda_Convex:  0.1
+lambda_Volume:  1.0
+lambda_Anchor:  1.0
+restore_from:  ../snapshots/BAPA_best.pth
+Start: Sun Mar 20 15:50:53 2022
+iter =        0/  250000, loss_seg_p = 0.012 loss_seg_y = 0.630 Convex = -18.391 Volume = -13.057 Anchor = 14.182 Place_loss = 0.284
+iter =      100/  250000, loss_seg_p = 0.108 loss_seg_y = 0.784 Convex = -15.224 Volume = -14.545 Anchor = 6.430 Place_loss = 0.057
+iter =      200/  250000, loss_seg_p = 0.020 loss_seg_y = 0.721 Convex = -13.397 Volume = -15.598 Anchor = 7.854 Place_loss = 0.021
+iter =      300/  250000, loss_seg_p = 0.017 loss_seg_y = 0.738 Convex = -12.116 Volume = -16.439 Anchor = 7.554 Place_loss = 0.013
+iter =      400/  250000, loss_seg_p = 0.017 loss_seg_y = 0.820 Convex = -11.205 Volume = -17.115 Anchor = 12.666 Place_loss = 0.019
+iter =      500/  250000, loss_seg_p = 0.025 loss_seg_y = 0.889 Convex = -10.486 Volume = -17.659 Anchor = 10.429 Place_loss = 0.021
+iter =      600/  250000, loss_seg_p = 0.102 loss_seg_y = 0.960 Convex = -9.786 Volume = -18.097 Anchor = 10.501 Place_loss = 0.032
+iter =      700/  250000, loss_seg_p = 0.019 loss_seg_y = 0.852 Convex = -9.150 Volume = -18.440 Anchor = 5.912 Place_loss = 0.012
+iter =      800/  250000, loss_seg_p = 0.055 loss_seg_y = 0.942 Convex = -8.744 Volume = -18.714 Anchor = 14.303 Place_loss = 0.021
+iter =      900/  250000, loss_seg_p = 0.082 loss_seg_y = 1.030 Convex = -8.448 Volume = -18.948 Anchor = 10.557 Place_loss = 0.032
+iter =     1000/  250000, loss_seg_p = 0.136 loss_seg_y = 1.031 Convex = -8.213 Volume = -19.148 Anchor = 9.705 Place_loss = 0.060
+2022-03-20 16:04:17   Begin evaluation on iter     1000/  250000  
+Evaluate for testing data
+===>road:	92.1
+===>sidewalk:	56.38
+===>building:	87.46
+===>wall:	23.06
+===>fence:	39.45
+===>pole:	39.43
+===>light:	42.87
+===>sign:	58.67
+===>vegetation:	87.75
+===>terrain:	34.02
+===>sky:	84.25
+===>person:	69.54
+===>rider:	42.56
+===>car:	88.44
+===>truck:	32.47
+===>bus:	34.9
+===>train:	0.0
+===>motocycle:	41.73
+===>bicycle:	59.3
+===> mIoU: 53.39
+Finish Evaluation: Sun Mar 20 16:13:27 2022
+Saving model with mIoU:  53.39
+iter =     1100/  250000, loss_seg_p = 0.104 loss_seg_y = 1.075 Convex = -8.020 Volume = -19.328 Anchor = 14.397 Place_loss = 0.047
+iter =     1200/  250000, loss_seg_p = 0.060 loss_seg_y = 0.936 Convex = -7.859 Volume = -19.483 Anchor = 13.197 Place_loss = 0.026
+iter =     1300/  250000, loss_seg_p = 0.126 loss_seg_y = 0.941 Convex = -7.729 Volume = -19.638 Anchor = 8.425 Place_loss = 0.029
+iter =     1400/  250000, loss_seg_p = 0.191 loss_seg_y = 1.220 Convex = -7.618 Volume = -19.779 Anchor = 11.891 Place_loss = 0.048
+iter =     1500/  250000, loss_seg_p = 0.090 loss_seg_y = 1.148 Convex = -7.521 Volume = -19.921 Anchor = 11.423 Place_loss = 0.037
+iter =     1600/  250000, loss_seg_p = 0.057 loss_seg_y = 1.014 Convex = -7.433 Volume = -20.049 Anchor = 9.706 Place_loss = 0.024
+iter =     1700/  250000, loss_seg_p = 0.042 loss_seg_y = 0.983 Convex = -7.348 Volume = -20.157 Anchor = 11.236 Place_loss = 0.025
+iter =     1800/  250000, loss_seg_p = 0.120 loss_seg_y = 1.038 Convex = -7.255 Volume = -20.250 Anchor = 12.714 Place_loss = 0.016
+iter =     1900/  250000, loss_seg_p = 0.057 loss_seg_y = 1.070 Convex = -7.109 Volume = -20.324 Anchor = 10.759 Place_loss = 0.022
+iter =     2000/  250000, loss_seg_p = 0.082 loss_seg_y = 1.025 Convex = -6.857 Volume = -20.342 Anchor = 10.441 Place_loss = 0.031
+2022-03-20 16:26:24   Begin evaluation on iter     2000/  250000  
+Evaluate for testing data
+===>road:	93.72
+===>sidewalk:	57.46
+===>building:	86.61
+===>wall:	22.29
+===>fence:	35.83
+===>pole:	40.2
+===>light:	45.01
+===>sign:	50.87
+===>vegetation:	88.17
+===>terrain:	44.21
+===>sky:	88.78
+===>person:	69.28
+===>rider:	42.07
+===>car:	89.34
+===>truck:	47.16
+===>bus:	45.04
+===>train:	0.0
+===>motocycle:	44.53
+===>bicycle:	58.13
+===> mIoU: 55.2
+Finish Evaluation: Sun Mar 20 16:35:38 2022
+Saving model with mIoU:  55.2
+iter =     2100/  250000, loss_seg_p = 0.141 loss_seg_y = 1.252 Convex = -6.652 Volume = -20.335 Anchor = 10.563 Place_loss = 0.043
+iter =     2200/  250000, loss_seg_p = 0.064 loss_seg_y = 1.087 Convex = -6.458 Volume = -20.289 Anchor = 8.605 Place_loss = 0.017
+iter =     2300/  250000, loss_seg_p = 0.049 loss_seg_y = 1.067 Convex = -6.341 Volume = -20.274 Anchor = 12.344 Place_loss = 0.022
+iter =     2400/  250000, loss_seg_p = 0.078 loss_seg_y = 1.053 Convex = -6.249 Volume = -20.303 Anchor = 11.236 Place_loss = 0.017
+iter =     2500/  250000, loss_seg_p = 0.313 loss_seg_y = 1.398 Convex = -6.182 Volume = -20.349 Anchor = 12.679 Place_loss = 0.064
+iter =     2600/  250000, loss_seg_p = 0.032 loss_seg_y = 1.019 Convex = -6.136 Volume = -20.410 Anchor = 7.887 Place_loss = 0.014
+iter =     2700/  250000, loss_seg_p = 0.034 loss_seg_y = 1.017 Convex = -6.100 Volume = -20.470 Anchor = 12.240 Place_loss = 0.015
+iter =     2800/  250000, loss_seg_p = 0.019 loss_seg_y = 0.953 Convex = -6.069 Volume = -20.519 Anchor = 8.788 Place_loss = 0.012
+iter =     2900/  250000, loss_seg_p = 0.081 loss_seg_y = 1.155 Convex = -6.040 Volume = -20.575 Anchor = 8.239 Place_loss = 0.022
+iter =     3000/  250000, loss_seg_p = 0.015 loss_seg_y = 1.061 Convex = -5.992 Volume = -20.629 Anchor = 7.955 Place_loss = 0.015
+2022-03-20 16:48:38   Begin evaluation on iter     3000/  250000  
+Evaluate for testing data
+===>road:	93.01
+===>sidewalk:	58.01
+===>building:	88.13
+===>wall:	26.63
+===>fence:	39.19
+===>pole:	40.99
+===>light:	44.79
+===>sign:	59.29
+===>vegetation:	87.92
+===>terrain:	31.86
+===>sky:	89.15
+===>person:	70.53
+===>rider:	43.45
+===>car:	89.64
+===>truck:	43.12
+===>bus:	54.49
+===>train:	0.0
+===>motocycle:	48.61
+===>bicycle:	58.06
+===> mIoU: 56.15
+Finish Evaluation: Sun Mar 20 16:57:24 2022
+Saving model with mIoU:  56.15
+iter =     3100/  250000, loss_seg_p = 0.056 loss_seg_y = 1.177 Convex = -5.901 Volume = -20.644 Anchor = 8.666 Place_loss = 0.032
+iter =     3200/  250000, loss_seg_p = 0.019 loss_seg_y = 1.009 Convex = -5.834 Volume = -20.651 Anchor = 13.027 Place_loss = 0.010
+iter =     3300/  250000, loss_seg_p = 0.015 loss_seg_y = 1.026 Convex = -5.785 Volume = -20.653 Anchor = 7.691 Place_loss = 0.011
+iter =     3400/  250000, loss_seg_p = 0.054 loss_seg_y = 1.088 Convex = -5.748 Volume = -20.673 Anchor = 14.985 Place_loss = 0.017
+iter =     3500/  250000, loss_seg_p = 0.028 loss_seg_y = 1.103 Convex = -5.718 Volume = -20.699 Anchor = 8.311 Place_loss = 0.018
+iter =     3600/  250000, loss_seg_p = 0.057 loss_seg_y = 1.139 Convex = -5.690 Volume = -20.721 Anchor = 10.625 Place_loss = 0.020
+iter =     3700/  250000, loss_seg_p = 0.027 loss_seg_y = 1.072 Convex = -5.657 Volume = -20.756 Anchor = 10.323 Place_loss = 0.017
+iter =     3800/  250000, loss_seg_p = 0.013 loss_seg_y = 1.037 Convex = -5.597 Volume = -20.776 Anchor = 7.793 Place_loss = 0.014
+iter =     3900/  250000, loss_seg_p = 0.097 loss_seg_y = 1.226 Convex = -5.524 Volume = -20.757 Anchor = 8.751 Place_loss = 0.026
+iter =     4000/  250000, loss_seg_p = 0.009 loss_seg_y = 1.033 Convex = -5.479 Volume = -20.744 Anchor = 10.084 Place_loss = 0.008
+2022-03-20 17:10:18   Begin evaluation on iter     4000/  250000  
+Evaluate for testing data
+===>road:	93.79
+===>sidewalk:	58.44
+===>building:	87.63
+===>wall:	26.25
+===>fence:	37.84
+===>pole:	38.89
+===>light:	45.44
+===>sign:	56.63
+===>vegetation:	88.48
+===>terrain:	45.61
+===>sky:	88.4
+===>person:	70.34
+===>rider:	43.27
+===>car:	90.0
+===>truck:	51.42
+===>bus:	57.58
+===>train:	0.0
+===>motocycle:	46.07
+===>bicycle:	58.17
+===> mIoU: 57.07
+Finish Evaluation: Sun Mar 20 17:19:08 2022
+Saving model with mIoU:  57.07
+iter =     4100/  250000, loss_seg_p = 0.066 loss_seg_y = 1.135 Convex = -5.448 Volume = -20.741 Anchor = 8.426 Place_loss = 0.018
+iter =     4200/  250000, loss_seg_p = 0.020 loss_seg_y = 1.123 Convex = -5.428 Volume = -20.746 Anchor = 14.466 Place_loss = 0.015
+iter =     4300/  250000, loss_seg_p = 0.025 loss_seg_y = 1.156 Convex = -5.416 Volume = -20.762 Anchor = 11.132 Place_loss = 0.014
+iter =     4400/  250000, loss_seg_p = 0.135 loss_seg_y = 1.270 Convex = -5.408 Volume = -20.796 Anchor = 12.002 Place_loss = 0.030
+iter =     4500/  250000, loss_seg_p = 0.047 loss_seg_y = 1.143 Convex = -5.401 Volume = -20.826 Anchor = 9.963 Place_loss = 0.016
+iter =     4600/  250000, loss_seg_p = 0.018 loss_seg_y = 1.091 Convex = -5.395 Volume = -20.856 Anchor = 12.359 Place_loss = 0.008
+iter =     4700/  250000, loss_seg_p = 0.014 loss_seg_y = 1.157 Convex = -5.387 Volume = -20.881 Anchor = 11.540 Place_loss = 0.011
+iter =     4800/  250000, loss_seg_p = 0.050 loss_seg_y = 1.190 Convex = -5.382 Volume = -20.926 Anchor = 11.720 Place_loss = 0.019
+iter =     4900/  250000, loss_seg_p = 0.077 loss_seg_y = 1.170 Convex = -5.375 Volume = -20.974 Anchor = 7.750 Place_loss = 0.019
+iter =     5000/  250000, loss_seg_p = 0.052 loss_seg_y = 1.189 Convex = -5.365 Volume = -21.019 Anchor = 12.653 Place_loss = 0.018
+2022-03-20 17:32:17   Begin evaluation on iter     5000/  250000  
+Evaluate for testing data
+===>road:	93.7
+===>sidewalk:	57.86
+===>building:	87.73
+===>wall:	22.52
+===>fence:	38.87
+===>pole:	40.57
+===>light:	45.55
+===>sign:	59.42
+===>vegetation:	88.68
+===>terrain:	47.74
+===>sky:	88.21
+===>person:	69.67
+===>rider:	42.23
+===>car:	84.68
+===>truck:	49.69
+===>bus:	50.94
+===>train:	0.0
+===>motocycle:	12.0
+===>bicycle:	58.9
+===> mIoU: 54.68
+Finish Evaluation: Sun Mar 20 17:41:19 2022
+iter =     5100/  250000, loss_seg_p = 0.013 loss_seg_y = 1.101 Convex = -5.361 Volume = -21.042 Anchor = 8.954 Place_loss = 0.016
+iter =     5200/  250000, loss_seg_p = 0.054 loss_seg_y = 1.204 Convex = -5.356 Volume = -21.052 Anchor = 13.181 Place_loss = 0.021
+iter =     5300/  250000, loss_seg_p = 0.040 loss_seg_y = 1.220 Convex = -5.352 Volume = -21.074 Anchor = 9.008 Place_loss = 0.025
+iter =     5400/  250000, loss_seg_p = 0.010 loss_seg_y = 1.135 Convex = -5.352 Volume = -21.109 Anchor = 10.500 Place_loss = 0.011
+iter =     5500/  250000, loss_seg_p = 0.029 loss_seg_y = 1.189 Convex = -5.349 Volume = -21.133 Anchor = 10.410 Place_loss = 0.012
+iter =     5600/  250000, loss_seg_p = 0.041 loss_seg_y = 1.165 Convex = -5.344 Volume = -21.149 Anchor = 13.160 Place_loss = 0.016
+iter =     5700/  250000, loss_seg_p = 0.031 loss_seg_y = 1.155 Convex = -5.340 Volume = -21.168 Anchor = 10.751 Place_loss = 0.014
+iter =     5800/  250000, loss_seg_p = 0.109 loss_seg_y = 1.297 Convex = -5.335 Volume = -21.181 Anchor = 16.025 Place_loss = 0.027
+iter =     5900/  250000, loss_seg_p = 0.158 loss_seg_y = 1.287 Convex = -5.329 Volume = -21.189 Anchor = 7.020 Place_loss = 0.017
+iter =     6000/  250000, loss_seg_p = 0.014 loss_seg_y = 1.142 Convex = -5.325 Volume = -21.198 Anchor = 13.888 Place_loss = 0.012
+2022-03-20 17:54:11   Begin evaluation on iter     6000/  250000  
+Evaluate for testing data
+===>road:	94.25
+===>sidewalk:	61.13
+===>building:	88.01
+===>wall:	28.16
+===>fence:	39.01
+===>pole:	40.09
+===>light:	45.86
+===>sign:	57.87
+===>vegetation:	88.3
+===>terrain:	42.19
+===>sky:	89.18
+===>person:	70.69
+===>rider:	43.37
+===>car:	90.3
+===>truck:	53.48
+===>bus:	57.1
+===>train:	0.0
+===>motocycle:	47.78
+===>bicycle:	59.37
+===> mIoU: 57.69
+Finish Evaluation: Sun Mar 20 18:03:15 2022
+Saving model with mIoU:  57.69
+iter =     6100/  250000, loss_seg_p = 0.036 loss_seg_y = 1.143 Convex = -5.323 Volume = -21.220 Anchor = 13.604 Place_loss = 0.012
+iter =     6200/  250000, loss_seg_p = 0.070 loss_seg_y = 1.272 Convex = -5.321 Volume = -21.237 Anchor = 7.940 Place_loss = 0.028
+iter =     6300/  250000, loss_seg_p = 0.285 loss_seg_y = 1.223 Convex = -5.318 Volume = -21.257 Anchor = 15.050 Place_loss = 0.024
+iter =     6400/  250000, loss_seg_p = 0.043 loss_seg_y = 1.188 Convex = -5.315 Volume = -21.266 Anchor = 10.632 Place_loss = 0.017
+iter =     6500/  250000, loss_seg_p = 0.136 loss_seg_y = 1.292 Convex = -5.314 Volume = -21.287 Anchor = 13.203 Place_loss = 0.016
+iter =     6600/  250000, loss_seg_p = 0.430 loss_seg_y = 1.588 Convex = -5.313 Volume = -21.298 Anchor = 14.249 Place_loss = 0.045
+iter =     6700/  250000, loss_seg_p = 0.060 loss_seg_y = 1.222 Convex = -5.312 Volume = -21.314 Anchor = 9.305 Place_loss = 0.016
+iter =     6800/  250000, loss_seg_p = 0.008 loss_seg_y = 1.121 Convex = -5.312 Volume = -21.331 Anchor = 8.914 Place_loss = 0.007
+iter =     6900/  250000, loss_seg_p = 0.035 loss_seg_y = 1.226 Convex = -5.310 Volume = -21.340 Anchor = 12.242 Place_loss = 0.020
+iter =     7000/  250000, loss_seg_p = 0.061 loss_seg_y = 1.186 Convex = -5.307 Volume = -21.341 Anchor = 12.958 Place_loss = 0.026
+2022-03-20 18:16:09   Begin evaluation on iter     7000/  250000  
+Evaluate for testing data
+===>road:	94.16
+===>sidewalk:	59.77
+===>building:	88.25
+===>wall:	28.44
+===>fence:	39.37
+===>pole:	39.4
+===>light:	45.29
+===>sign:	60.39
+===>vegetation:	88.5
+===>terrain:	46.17
+===>sky:	89.5
+===>person:	71.12
+===>rider:	43.7
+===>car:	90.32
+===>truck:	51.34
+===>bus:	53.77
+===>train:	0.0
+===>motocycle:	48.6
+===>bicycle:	59.18
+===> mIoU: 57.75
+Finish Evaluation: Sun Mar 20 18:25:46 2022
+Saving model with mIoU:  57.75
+iter =     7100/  250000, loss_seg_p = 0.087 loss_seg_y = 1.336 Convex = -5.304 Volume = -21.351 Anchor = 13.467 Place_loss = 0.025
+iter =     7200/  250000, loss_seg_p = 0.023 loss_seg_y = 1.154 Convex = -5.246 Volume = -21.338 Anchor = 12.100 Place_loss = 0.011
+iter =     7300/  250000, loss_seg_p = 0.038 loss_seg_y = 1.276 Convex = -5.214 Volume = -21.305 Anchor = 11.170 Place_loss = 0.015
+iter =     7400/  250000, loss_seg_p = 0.021 loss_seg_y = 1.181 Convex = -5.194 Volume = -21.313 Anchor = 13.926 Place_loss = 0.010
+iter =     7500/  250000, loss_seg_p = 0.043 loss_seg_y = 1.186 Convex = -5.166 Volume = -21.303 Anchor = 12.246 Place_loss = 0.019
+iter =     7600/  250000, loss_seg_p = 0.015 loss_seg_y = 1.149 Convex = -5.128 Volume = -21.262 Anchor = 7.308 Place_loss = 0.010
+iter =     7700/  250000, loss_seg_p = 0.093 loss_seg_y = 1.233 Convex = -5.098 Volume = -21.241 Anchor = 13.633 Place_loss = 0.019
+iter =     7800/  250000, loss_seg_p = 0.063 loss_seg_y = 1.311 Convex = -5.078 Volume = -21.212 Anchor = 8.513 Place_loss = 0.027
+iter =     7900/  250000, loss_seg_p = 0.010 loss_seg_y = 1.159 Convex = -5.065 Volume = -21.186 Anchor = 10.002 Place_loss = 0.009
+iter =     8000/  250000, loss_seg_p = 0.032 loss_seg_y = 1.147 Convex = -5.059 Volume = -21.174 Anchor = 9.652 Place_loss = 0.015
+2022-03-20 18:38:38   Begin evaluation on iter     8000/  250000  
+Evaluate for testing data
+===>road:	94.28
+===>sidewalk:	61.01
+===>building:	88.2
+===>wall:	26.64
+===>fence:	36.84
+===>pole:	41.29
+===>light:	47.34
+===>sign:	60.42
+===>vegetation:	88.67
+===>terrain:	47.75
+===>sky:	88.43
+===>person:	70.5
+===>rider:	43.79
+===>car:	89.03
+===>truck:	45.61
+===>bus:	49.2
+===>train:	0.0
+===>motocycle:	42.9
+===>bicycle:	58.47
+===> mIoU: 56.86
+Finish Evaluation: Sun Mar 20 18:47:44 2022
+iter =     8100/  250000, loss_seg_p = 0.048 loss_seg_y = 1.243 Convex = -5.055 Volume = -21.167 Anchor = 15.549 Place_loss = 0.017
+iter =     8200/  250000, loss_seg_p = 0.035 loss_seg_y = 1.264 Convex = -5.051 Volume = -21.156 Anchor = 9.924 Place_loss = 0.014
+iter =     8300/  250000, loss_seg_p = 0.035 loss_seg_y = 1.158 Convex = -5.050 Volume = -21.162 Anchor = 8.767 Place_loss = 0.010
+iter =     8400/  250000, loss_seg_p = 0.042 loss_seg_y = 1.270 Convex = -5.048 Volume = -21.166 Anchor = 12.146 Place_loss = 0.019
+iter =     8500/  250000, loss_seg_p = 0.018 loss_seg_y = 1.172 Convex = -5.047 Volume = -21.169 Anchor = 11.906 Place_loss = 0.013
+iter =     8600/  250000, loss_seg_p = 0.033 loss_seg_y = 1.235 Convex = -5.047 Volume = -21.179 Anchor = 16.633 Place_loss = 0.016
+iter =     8700/  250000, loss_seg_p = 0.039 loss_seg_y = 1.216 Convex = -5.044 Volume = -21.177 Anchor = 11.540 Place_loss = 0.019
+iter =     8800/  250000, loss_seg_p = 0.014 loss_seg_y = 1.162 Convex = -5.042 Volume = -21.180 Anchor = 12.312 Place_loss = 0.010
+iter =     8900/  250000, loss_seg_p = 0.030 loss_seg_y = 1.313 Convex = -5.039 Volume = -21.175 Anchor = 11.802 Place_loss = 0.019
+iter =     9000/  250000, loss_seg_p = 0.049 loss_seg_y = 1.232 Convex = -5.036 Volume = -21.181 Anchor = 11.226 Place_loss = 0.014
+2022-03-20 19:00:37   Begin evaluation on iter     9000/  250000  
+Evaluate for testing data
+===>road:	94.04
+===>sidewalk:	59.9
+===>building:	88.09
+===>wall:	27.12
+===>fence:	40.51
+===>pole:	41.23
+===>light:	45.31
+===>sign:	60.1
+===>vegetation:	88.69
+===>terrain:	46.31
+===>sky:	88.83
+===>person:	71.06
+===>rider:	44.58
+===>car:	90.45
+===>truck:	50.17
+===>bus:	60.36
+===>train:	0.0
+===>motocycle:	48.99
+===>bicycle:	58.53
+===> mIoU: 58.12
+Finish Evaluation: Sun Mar 20 19:09:53 2022
+Saving model with mIoU:  58.12
+iter =     9100/  250000, loss_seg_p = 0.100 loss_seg_y = 1.322 Convex = -5.034 Volume = -21.185 Anchor = 10.866 Place_loss = 0.022
+iter =     9200/  250000, loss_seg_p = 0.034 loss_seg_y = 1.309 Convex = -5.033 Volume = -21.182 Anchor = 11.726 Place_loss = 0.015
+iter =     9300/  250000, loss_seg_p = 0.006 loss_seg_y = 1.115 Convex = -5.034 Volume = -21.195 Anchor = 12.096 Place_loss = 0.005
+iter =     9400/  250000, loss_seg_p = 0.011 loss_seg_y = 1.150 Convex = -5.034 Volume = -21.201 Anchor = 12.982 Place_loss = 0.011
+iter =     9500/  250000, loss_seg_p = 0.011 loss_seg_y = 1.175 Convex = -5.035 Volume = -21.213 Anchor = 8.585 Place_loss = 0.007
+iter =     9600/  250000, loss_seg_p = 0.011 loss_seg_y = 1.143 Convex = -5.036 Volume = -21.220 Anchor = 9.240 Place_loss = 0.010
+iter =     9700/  250000, loss_seg_p = 0.018 loss_seg_y = 1.184 Convex = -5.035 Volume = -21.229 Anchor = 10.004 Place_loss = 0.014
+iter =     9800/  250000, loss_seg_p = 0.006 loss_seg_y = 1.132 Convex = -5.034 Volume = -21.232 Anchor = 10.967 Place_loss = 0.006
+iter =     9900/  250000, loss_seg_p = 0.054 loss_seg_y = 1.264 Convex = -5.032 Volume = -21.239 Anchor = 11.131 Place_loss = 0.016
+iter =    10000/  250000, loss_seg_p = 0.033 loss_seg_y = 1.296 Convex = -5.030 Volume = -21.239 Anchor = 11.850 Place_loss = 0.019
+2022-03-20 19:23:00   Begin evaluation on iter    10000/  250000  
+Evaluate for testing data
+===>road:	94.12
+===>sidewalk:	61.29
+===>building:	87.82
+===>wall:	18.31
+===>fence:	38.48
+===>pole:	40.78
+===>light:	45.86
+===>sign:	59.22
+===>vegetation:	88.73
+===>terrain:	46.37
+===>sky:	89.62
+===>person:	70.97
+===>rider:	43.5
+===>car:	89.99
+===>truck:	53.04
+===>bus:	61.26
+===>train:	0.0
+===>motocycle:	49.13
+===>bicycle:	58.59
+===> mIoU: 57.74
+Finish Evaluation: Sun Mar 20 19:32:15 2022
+iter =    10100/  250000, loss_seg_p = 0.024 loss_seg_y = 1.188 Convex = -5.030 Volume = -21.248 Anchor = 11.766 Place_loss = 0.015
+iter =    10200/  250000, loss_seg_p = 0.150 loss_seg_y = 1.276 Convex = -5.029 Volume = -21.250 Anchor = 12.699 Place_loss = 0.021
+iter =    10300/  250000, loss_seg_p = 0.029 loss_seg_y = 1.172 Convex = -5.028 Volume = -21.252 Anchor = 15.443 Place_loss = 0.007
+iter =    10400/  250000, loss_seg_p = 0.024 loss_seg_y = 1.208 Convex = -5.027 Volume = -21.245 Anchor = 11.486 Place_loss = 0.013
+iter =    10500/  250000, loss_seg_p = 0.015 loss_seg_y = 1.182 Convex = -5.026 Volume = -21.242 Anchor = 8.468 Place_loss = 0.009
+iter =    10600/  250000, loss_seg_p = 0.061 loss_seg_y = 1.280 Convex = -5.028 Volume = -21.259 Anchor = 11.588 Place_loss = 0.024
+iter =    10700/  250000, loss_seg_p = 0.069 loss_seg_y = 1.374 Convex = -5.027 Volume = -21.259 Anchor = 9.166 Place_loss = 0.020
+iter =    10800/  250000, loss_seg_p = 0.108 loss_seg_y = 1.380 Convex = -5.027 Volume = -21.266 Anchor = 8.991 Place_loss = 0.029
+iter =    10900/  250000, loss_seg_p = 0.016 loss_seg_y = 1.202 Convex = -5.027 Volume = -21.264 Anchor = 10.882 Place_loss = 0.012
+iter =    11000/  250000, loss_seg_p = 0.016 loss_seg_y = 1.163 Convex = -5.028 Volume = -21.321 Anchor = 13.163 Place_loss = 0.009
+2022-03-20 19:45:13   Begin evaluation on iter    11000/  250000  
+Evaluate for testing data
+===>road:	93.93
+===>sidewalk:	59.56
+===>building:	88.04
+===>wall:	28.98
+===>fence:	39.32
+===>pole:	39.31
+===>light:	46.03
+===>sign:	58.81
+===>vegetation:	88.79
+===>terrain:	46.81
+===>sky:	88.95
+===>person:	71.17
+===>rider:	44.74
+===>car:	89.58
+===>truck:	52.44
+===>bus:	56.62
+===>train:	0.0
+===>motocycle:	51.53
+===>bicycle:	58.93
+===> mIoU: 58.08
+Finish Evaluation: Sun Mar 20 19:54:13 2022
+iter =    11100/  250000, loss_seg_p = 0.021 loss_seg_y = 1.189 Convex = -5.026 Volume = -21.343 Anchor = 12.095 Place_loss = 0.014
+iter =    11200/  250000, loss_seg_p = 0.009 loss_seg_y = 1.222 Convex = -5.027 Volume = -21.354 Anchor = 11.930 Place_loss = 0.015
+iter =    11300/  250000, loss_seg_p = 0.010 loss_seg_y = 1.126 Convex = -5.027 Volume = -21.360 Anchor = 9.691 Place_loss = 0.008
+iter =    11400/  250000, loss_seg_p = 0.017 loss_seg_y = 1.170 Convex = -5.026 Volume = -21.360 Anchor = 9.264 Place_loss = 0.011
+iter =    11500/  250000, loss_seg_p = 0.018 loss_seg_y = 1.174 Convex = -5.026 Volume = -21.367 Anchor = 7.717 Place_loss = 0.011
+iter =    11600/  250000, loss_seg_p = 0.004 loss_seg_y = 1.119 Convex = -5.024 Volume = -21.365 Anchor = 5.834 Place_loss = 0.003
+iter =    11700/  250000, loss_seg_p = 0.005 loss_seg_y = 1.103 Convex = -5.024 Volume = -21.375 Anchor = 8.545 Place_loss = 0.005
+iter =    11800/  250000, loss_seg_p = 0.021 loss_seg_y = 1.224 Convex = -5.022 Volume = -21.368 Anchor = 12.020 Place_loss = 0.016
+iter =    11900/  250000, loss_seg_p = 0.028 loss_seg_y = 1.210 Convex = -5.023 Volume = -21.378 Anchor = 15.097 Place_loss = 0.013
+iter =    12000/  250000, loss_seg_p = 0.021 loss_seg_y = 1.166 Convex = -5.023 Volume = -21.380 Anchor = 10.958 Place_loss = 0.009
+2022-03-20 20:07:07   Begin evaluation on iter    12000/  250000  
+Evaluate for testing data
+===>road:	94.21
+===>sidewalk:	60.2
+===>building:	88.29
+===>wall:	29.38
+===>fence:	40.42
+===>pole:	40.82
+===>light:	45.89
+===>sign:	60.2
+===>vegetation:	88.95
+===>terrain:	47.97
+===>sky:	89.45
+===>person:	71.18
+===>rider:	44.86
+===>car:	90.34
+===>truck:	53.13
+===>bus:	57.44
+===>train:	0.0
+===>motocycle:	50.58
+===>bicycle:	58.5
+===> mIoU: 58.52
+Finish Evaluation: Sun Mar 20 20:16:13 2022
+Saving model with mIoU:  58.52
+iter =    12100/  250000, loss_seg_p = 0.013 loss_seg_y = 1.183 Convex = -5.023 Volume = -21.378 Anchor = 10.688 Place_loss = 0.013
+iter =    12200/  250000, loss_seg_p = 0.024 loss_seg_y = 1.169 Convex = -5.022 Volume = -21.377 Anchor = 10.839 Place_loss = 0.011
+iter =    12300/  250000, loss_seg_p = 0.011 loss_seg_y = 1.170 Convex = -5.020 Volume = -21.370 Anchor = 9.536 Place_loss = 0.008
+iter =    12400/  250000, loss_seg_p = 0.029 loss_seg_y = 1.255 Convex = -5.019 Volume = -21.365 Anchor = 10.790 Place_loss = 0.017
+iter =    12500/  250000, loss_seg_p = 0.009 loss_seg_y = 1.144 Convex = -5.019 Volume = -21.368 Anchor = 7.588 Place_loss = 0.005
+iter =    12600/  250000, loss_seg_p = 0.020 loss_seg_y = 1.249 Convex = -5.021 Volume = -21.381 Anchor = 8.818 Place_loss = 0.012
+iter =    12700/  250000, loss_seg_p = 0.008 loss_seg_y = 1.145 Convex = -5.020 Volume = -21.377 Anchor = 9.613 Place_loss = 0.007
+iter =    12800/  250000, loss_seg_p = 0.022 loss_seg_y = 1.188 Convex = -5.019 Volume = -21.378 Anchor = 14.700 Place_loss = 0.008
+iter =    12900/  250000, loss_seg_p = 0.024 loss_seg_y = 1.200 Convex = -5.019 Volume = -21.376 Anchor = 12.625 Place_loss = 0.011
+iter =    13000/  250000, loss_seg_p = 0.004 loss_seg_y = 1.138 Convex = -5.019 Volume = -21.378 Anchor = 7.430 Place_loss = 0.005
+2022-03-20 20:29:06   Begin evaluation on iter    13000/  250000  
+Evaluate for testing data
+===>road:	94.2
+===>sidewalk:	60.7
+===>building:	88.05
+===>wall:	28.99
+===>fence:	38.66
+===>pole:	40.68
+===>light:	46.12
+===>sign:	60.06
+===>vegetation:	88.72
+===>terrain:	47.22
+===>sky:	88.61
+===>person:	71.2
+===>rider:	44.62
+===>car:	90.31
+===>truck:	55.12
+===>bus:	55.61
+===>train:	0.0
+===>motocycle:	43.11
+===>bicycle:	58.0
+===> mIoU: 57.89
+Finish Evaluation: Sun Mar 20 20:38:07 2022
+iter =    13100/  250000, loss_seg_p = 0.005 loss_seg_y = 1.135 Convex = -5.019 Volume = -21.372 Anchor = 8.472 Place_loss = 0.006
+iter =    13200/  250000, loss_seg_p = 0.010 loss_seg_y = 1.174 Convex = -5.019 Volume = -21.378 Anchor = 6.641 Place_loss = 0.005
+iter =    13300/  250000, loss_seg_p = 0.020 loss_seg_y = 1.233 Convex = -5.019 Volume = -21.376 Anchor = 9.161 Place_loss = 0.016
+iter =    13400/  250000, loss_seg_p = 0.011 loss_seg_y = 1.161 Convex = -5.018 Volume = -21.374 Anchor = 12.134 Place_loss = 0.008
+iter =    13500/  250000, loss_seg_p = 0.085 loss_seg_y = 1.414 Convex = -5.018 Volume = -21.374 Anchor = 9.857 Place_loss = 0.023
+iter =    13600/  250000, loss_seg_p = 0.011 loss_seg_y = 1.166 Convex = -5.018 Volume = -21.375 Anchor = 8.774 Place_loss = 0.009
+iter =    13700/  250000, loss_seg_p = 0.021 loss_seg_y = 1.220 Convex = -5.019 Volume = -21.379 Anchor = 12.868 Place_loss = 0.012
+iter =    13800/  250000, loss_seg_p = 0.004 loss_seg_y = 1.096 Convex = -5.020 Volume = -21.386 Anchor = 10.101 Place_loss = 0.004
+iter =    13900/  250000, loss_seg_p = 0.029 loss_seg_y = 1.248 Convex = -5.020 Volume = -21.388 Anchor = 10.734 Place_loss = 0.015
+iter =    14000/  250000, loss_seg_p = 0.013 loss_seg_y = 1.170 Convex = -5.021 Volume = -21.398 Anchor = 10.406 Place_loss = 0.010
+2022-03-20 20:51:02   Begin evaluation on iter    14000/  250000  
+Evaluate for testing data
+===>road:	94.17
+===>sidewalk:	60.06
+===>building:	88.07
+===>wall:	26.86
+===>fence:	39.15
+===>pole:	40.42
+===>light:	45.41
+===>sign:	59.71
+===>vegetation:	88.85
+===>terrain:	47.58
+===>sky:	89.31
+===>person:	71.11
+===>rider:	43.42
+===>car:	90.74
+===>truck:	56.56
+===>bus:	59.35
+===>train:	0.0
+===>motocycle:	49.27
+===>bicycle:	58.23
+===> mIoU: 58.33
+Finish Evaluation: Sun Mar 20 20:59:58 2022
+iter =    14100/  250000, loss_seg_p = 0.012 loss_seg_y = 1.134 Convex = -5.019 Volume = -21.384 Anchor = 11.936 Place_loss = 0.007
+iter =    14200/  250000, loss_seg_p = 0.022 loss_seg_y = 1.282 Convex = -5.020 Volume = -21.392 Anchor = 7.275 Place_loss = 0.009
+iter =    14300/  250000, loss_seg_p = 0.003 loss_seg_y = 1.111 Convex = -5.019 Volume = -21.387 Anchor = 7.642 Place_loss = 0.004
+iter =    14400/  250000, loss_seg_p = 0.006 loss_seg_y = 1.147 Convex = -5.021 Volume = -21.396 Anchor = 10.164 Place_loss = 0.005
+iter =    14500/  250000, loss_seg_p = 0.009 loss_seg_y = 1.138 Convex = -5.019 Volume = -21.388 Anchor = 8.908 Place_loss = 0.011
+iter =    14600/  250000, loss_seg_p = 0.021 loss_seg_y = 1.183 Convex = -5.018 Volume = -21.383 Anchor = 11.712 Place_loss = 0.012
+iter =    14700/  250000, loss_seg_p = 0.009 loss_seg_y = 1.194 Convex = -5.017 Volume = -21.379 Anchor = 9.036 Place_loss = 0.007
+iter =    14800/  250000, loss_seg_p = 0.025 loss_seg_y = 1.304 Convex = -5.017 Volume = -21.383 Anchor = 10.704 Place_loss = 0.013
+iter =    14900/  250000, loss_seg_p = 0.011 loss_seg_y = 1.215 Convex = -5.018 Volume = -21.384 Anchor = 9.897 Place_loss = 0.011
+iter =    15000/  250000, loss_seg_p = 0.010 loss_seg_y = 1.127 Convex = -5.018 Volume = -21.388 Anchor = 10.594 Place_loss = 0.008
+2022-03-20 21:13:04   Begin evaluation on iter    15000/  250000  
+Evaluate for testing data
+===>road:	94.03
+===>sidewalk:	60.27
+===>building:	88.04
+===>wall:	27.41
+===>fence:	39.57
+===>pole:	41.05
+===>light:	46.58
+===>sign:	60.92
+===>vegetation:	88.78
+===>terrain:	47.5
+===>sky:	88.63
+===>person:	71.08
+===>rider:	45.45
+===>car:	90.12
+===>truck:	54.99
+===>bus:	58.27
+===>train:	0.0
+===>motocycle:	52.02
+===>bicycle:	58.87
+===> mIoU: 58.61
+Finish Evaluation: Sun Mar 20 21:22:05 2022
+Saving model with mIoU:  58.61
+iter =    15100/  250000, loss_seg_p = 0.034 loss_seg_y = 1.267 Convex = -5.017 Volume = -21.383 Anchor = 10.778 Place_loss = 0.016
+iter =    15200/  250000, loss_seg_p = 0.013 loss_seg_y = 1.234 Convex = -5.018 Volume = -21.388 Anchor = 10.176 Place_loss = 0.011
+iter =    15300/  250000, loss_seg_p = 0.015 loss_seg_y = 1.254 Convex = -5.018 Volume = -21.384 Anchor = 10.186 Place_loss = 0.016
+iter =    15400/  250000, loss_seg_p = 0.015 loss_seg_y = 1.253 Convex = -5.017 Volume = -21.380 Anchor = 8.131 Place_loss = 0.009
+iter =    15500/  250000, loss_seg_p = 0.017 loss_seg_y = 1.211 Convex = -5.019 Volume = -21.399 Anchor = 9.383 Place_loss = 0.009
+iter =    15600/  250000, loss_seg_p = 0.024 loss_seg_y = 1.214 Convex = -5.018 Volume = -21.391 Anchor = 10.720 Place_loss = 0.013
+iter =    15700/  250000, loss_seg_p = 0.010 loss_seg_y = 1.147 Convex = -5.019 Volume = -21.399 Anchor = 10.075 Place_loss = 0.007
+iter =    15800/  250000, loss_seg_p = 0.009 loss_seg_y = 1.131 Convex = -5.018 Volume = -21.389 Anchor = 11.197 Place_loss = 0.007
+iter =    15900/  250000, loss_seg_p = 0.039 loss_seg_y = 1.282 Convex = -5.018 Volume = -21.396 Anchor = 13.329 Place_loss = 0.015
+iter =    16000/  250000, loss_seg_p = 0.034 loss_seg_y = 1.322 Convex = -5.018 Volume = -21.392 Anchor = 10.242 Place_loss = 0.010
+2022-03-20 21:35:01   Begin evaluation on iter    16000/  250000  
+Evaluate for testing data
+===>road:	94.16
+===>sidewalk:	60.2
+===>building:	88.32
+===>wall:	28.21
+===>fence:	40.29
+===>pole:	41.47
+===>light:	46.69
+===>sign:	61.21
+===>vegetation:	88.71
+===>terrain:	46.73
+===>sky:	89.06
+===>person:	71.43
+===>rider:	45.13
+===>car:	90.48
+===>truck:	55.54
+===>bus:	59.05
+===>train:	0.0
+===>motocycle:	52.64
+===>bicycle:	59.98
+===> mIoU: 58.91
+Finish Evaluation: Sun Mar 20 21:44:08 2022
+Saving model with mIoU:  58.91
+iter =    16100/  250000, loss_seg_p = 0.023 loss_seg_y = 1.209 Convex = -5.017 Volume = -21.385 Anchor = 9.689 Place_loss = 0.011
+iter =    16200/  250000, loss_seg_p = 0.027 loss_seg_y = 1.205 Convex = -5.018 Volume = -21.390 Anchor = 11.956 Place_loss = 0.016
+iter =    16300/  250000, loss_seg_p = 0.011 loss_seg_y = 1.145 Convex = -5.018 Volume = -21.392 Anchor = 9.596 Place_loss = 0.008
+iter =    16400/  250000, loss_seg_p = 0.012 loss_seg_y = 1.167 Convex = -5.019 Volume = -21.396 Anchor = 12.746 Place_loss = 0.008
+iter =    16500/  250000, loss_seg_p = 0.022 loss_seg_y = 1.206 Convex = -5.019 Volume = -21.399 Anchor = 9.811 Place_loss = 0.010
+iter =    16600/  250000, loss_seg_p = 0.010 loss_seg_y = 1.167 Convex = -5.018 Volume = -21.392 Anchor = 14.280 Place_loss = 0.009
+iter =    16700/  250000, loss_seg_p = 0.010 loss_seg_y = 1.228 Convex = -5.019 Volume = -21.394 Anchor = 11.828 Place_loss = 0.008
+iter =    16800/  250000, loss_seg_p = 0.006 loss_seg_y = 1.133 Convex = -5.019 Volume = -21.397 Anchor = 7.165 Place_loss = 0.005
+iter =    16900/  250000, loss_seg_p = 0.008 loss_seg_y = 1.158 Convex = -5.019 Volume = -21.396 Anchor = 10.134 Place_loss = 0.006
+iter =    17000/  250000, loss_seg_p = 0.017 loss_seg_y = 1.179 Convex = -5.020 Volume = -21.404 Anchor = 13.190 Place_loss = 0.011
+2022-03-20 21:57:01   Begin evaluation on iter    17000/  250000  
+Evaluate for testing data
+===>road:	94.18
+===>sidewalk:	60.47
+===>building:	88.08
+===>wall:	28.51
+===>fence:	39.02
+===>pole:	41.15
+===>light:	46.26
+===>sign:	59.57
+===>vegetation:	88.74
+===>terrain:	46.75
+===>sky:	88.58
+===>person:	71.28
+===>rider:	44.84
+===>car:	90.56
+===>truck:	54.65
+===>bus:	58.5
+===>train:	0.0
+===>motocycle:	50.88
+===>bicycle:	59.36
+===> mIoU: 58.49
+Finish Evaluation: Sun Mar 20 22:06:07 2022
+iter =    17100/  250000, loss_seg_p = 0.009 loss_seg_y = 1.155 Convex = -5.020 Volume = -21.405 Anchor = 7.562 Place_loss = 0.006
+iter =    17200/  250000, loss_seg_p = 0.010 loss_seg_y = 1.198 Convex = -5.018 Volume = -21.395 Anchor = 12.512 Place_loss = 0.009
+iter =    17300/  250000, loss_seg_p = 0.018 loss_seg_y = 1.180 Convex = -5.017 Volume = -21.389 Anchor = 8.738 Place_loss = 0.009
+iter =    17400/  250000, loss_seg_p = 0.003 loss_seg_y = 1.114 Convex = -5.018 Volume = -21.396 Anchor = 6.462 Place_loss = 0.003
+iter =    17500/  250000, loss_seg_p = 0.007 loss_seg_y = 1.148 Convex = -5.020 Volume = -21.402 Anchor = 12.331 Place_loss = 0.006
+iter =    17600/  250000, loss_seg_p = 0.004 loss_seg_y = 1.137 Convex = -5.022 Volume = -21.413 Anchor = 8.448 Place_loss = 0.003
+iter =    17700/  250000, loss_seg_p = 0.019 loss_seg_y = 1.175 Convex = -5.020 Volume = -21.401 Anchor = 11.002 Place_loss = 0.008
+iter =    17800/  250000, loss_seg_p = 0.008 loss_seg_y = 1.154 Convex = -5.019 Volume = -21.400 Anchor = 9.299 Place_loss = 0.006
+iter =    17900/  250000, loss_seg_p = 0.010 loss_seg_y = 1.157 Convex = -5.019 Volume = -21.399 Anchor = 13.162 Place_loss = 0.008
+iter =    18000/  250000, loss_seg_p = 0.007 loss_seg_y = 1.126 Convex = -5.020 Volume = -21.401 Anchor = 9.624 Place_loss = 0.006
+2022-03-20 22:19:00   Begin evaluation on iter    18000/  250000  
+Evaluate for testing data
+===>road:	94.3
+===>sidewalk:	61.22
+===>building:	88.14
+===>wall:	29.32
+===>fence:	38.89
+===>pole:	40.66
+===>light:	46.67
+===>sign:	60.38
+===>vegetation:	88.79
+===>terrain:	46.49
+===>sky:	89.12
+===>person:	70.88
+===>rider:	43.73
+===>car:	90.55
+===>truck:	55.32
+===>bus:	60.21
+===>train:	0.0
+===>motocycle:	51.09
+===>bicycle:	58.62
+===> mIoU: 58.65
+Finish Evaluation: Sun Mar 20 22:28:08 2022
+iter =    18100/  250000, loss_seg_p = 0.013 loss_seg_y = 1.266 Convex = -5.018 Volume = -21.392 Anchor = 11.108 Place_loss = 0.010
+iter =    18200/  250000, loss_seg_p = 0.008 loss_seg_y = 1.156 Convex = -5.018 Volume = -21.395 Anchor = 12.537 Place_loss = 0.008
+iter =    18300/  250000, loss_seg_p = 0.014 loss_seg_y = 1.197 Convex = -5.021 Volume = -21.410 Anchor = 13.652 Place_loss = 0.011
+iter =    18400/  250000, loss_seg_p = 0.013 loss_seg_y = 1.195 Convex = -5.020 Volume = -21.412 Anchor = 8.699 Place_loss = 0.008
+iter =    18500/  250000, loss_seg_p = 0.008 loss_seg_y = 1.125 Convex = -5.019 Volume = -21.404 Anchor = 11.400 Place_loss = 0.005
+iter =    18600/  250000, loss_seg_p = 0.023 loss_seg_y = 1.244 Convex = -5.020 Volume = -21.400 Anchor = 10.364 Place_loss = 0.013
+iter =    18700/  250000, loss_seg_p = 0.005 loss_seg_y = 1.157 Convex = -5.018 Volume = -21.390 Anchor = 7.773 Place_loss = 0.005
+iter =    18800/  250000, loss_seg_p = 0.018 loss_seg_y = 1.230 Convex = -5.018 Volume = -21.389 Anchor = 12.793 Place_loss = 0.008
+iter =    18900/  250000, loss_seg_p = 0.015 loss_seg_y = 1.223 Convex = -5.019 Volume = -21.399 Anchor = 8.781 Place_loss = 0.011
+iter =    19000/  250000, loss_seg_p = 0.015 loss_seg_y = 1.173 Convex = -5.020 Volume = -21.398 Anchor = 8.493 Place_loss = 0.007
+2022-03-20 22:40:59   Begin evaluation on iter    19000/  250000  
+Evaluate for testing data
+===>road:	94.24
+===>sidewalk:	60.18
+===>building:	88.38
+===>wall:	30.76
+===>fence:	38.82
+===>pole:	40.21
+===>light:	47.25
+===>sign:	59.85
+===>vegetation:	88.82
+===>terrain:	46.26
+===>sky:	89.68
+===>person:	71.45
+===>rider:	45.34
+===>car:	90.97
+===>truck:	56.27
+===>bus:	62.51
+===>train:	0.0
+===>motocycle:	51.87
+===>bicycle:	58.36
+===> mIoU: 59.01
+Finish Evaluation: Sun Mar 20 22:50:10 2022
+Saving model with mIoU:  59.01
+iter =    19100/  250000, loss_seg_p = 0.007 loss_seg_y = 1.152 Convex = -5.020 Volume = -21.402 Anchor = 7.563 Place_loss = 0.005
+iter =    19200/  250000, loss_seg_p = 0.013 loss_seg_y = 1.220 Convex = -5.018 Volume = -21.391 Anchor = 11.908 Place_loss = 0.010
+iter =    19300/  250000, loss_seg_p = 0.006 loss_seg_y = 1.146 Convex = -5.018 Volume = -21.392 Anchor = 7.840 Place_loss = 0.004
+iter =    19400/  250000, loss_seg_p = 0.018 loss_seg_y = 1.191 Convex = -5.019 Volume = -21.397 Anchor = 13.587 Place_loss = 0.011
+iter =    19500/  250000, loss_seg_p = 0.011 loss_seg_y = 1.172 Convex = -5.018 Volume = -21.394 Anchor = 11.450 Place_loss = 0.007
+iter =    19600/  250000, loss_seg_p = 0.006 loss_seg_y = 1.129 Convex = -5.019 Volume = -21.403 Anchor = 10.880 Place_loss = 0.005
+iter =    19700/  250000, loss_seg_p = 0.017 loss_seg_y = 1.228 Convex = -5.018 Volume = -21.393 Anchor = 9.257 Place_loss = 0.009
+iter =    19800/  250000, loss_seg_p = 0.004 loss_seg_y = 1.127 Convex = -5.020 Volume = -21.406 Anchor = 8.255 Place_loss = 0.005
+iter =    19900/  250000, loss_seg_p = 0.006 loss_seg_y = 1.175 Convex = -5.019 Volume = -21.399 Anchor = 8.749 Place_loss = 0.007
+iter =    20000/  250000, loss_seg_p = 0.005 loss_seg_y = 1.117 Convex = -5.017 Volume = -21.392 Anchor = 12.256 Place_loss = 0.004
+2022-03-20 23:03:14   Begin evaluation on iter    20000/  250000  
+Evaluate for testing data
+===>road:	94.13
+===>sidewalk:	59.93
+===>building:	88.02
+===>wall:	27.78
+===>fence:	37.72
+===>pole:	40.57
+===>light:	47.04
+===>sign:	60.22
+===>vegetation:	88.72
+===>terrain:	47.44
+===>sky:	88.74
+===>person:	71.26
+===>rider:	43.81
+===>car:	90.4
+===>truck:	54.39
+===>bus:	58.19
+===>train:	0.0
+===>motocycle:	50.53
+===>bicycle:	57.67
+===> mIoU: 58.24
+Finish Evaluation: Sun Mar 20 23:12:23 2022
+iter =    20100/  250000, loss_seg_p = 0.010 loss_seg_y = 1.156 Convex = -5.018 Volume = -21.398 Anchor = 9.102 Place_loss = 0.008
+iter =    20200/  250000, loss_seg_p = 0.012 loss_seg_y = 1.136 Convex = -5.018 Volume = -21.397 Anchor = 14.874 Place_loss = 0.007
+iter =    20300/  250000, loss_seg_p = 0.008 loss_seg_y = 1.165 Convex = -5.019 Volume = -21.402 Anchor = 11.283 Place_loss = 0.007
+iter =    20400/  250000, loss_seg_p = 0.014 loss_seg_y = 1.242 Convex = -5.019 Volume = -21.396 Anchor = 10.732 Place_loss = 0.013
+iter =    20500/  250000, loss_seg_p = 0.040 loss_seg_y = 1.245 Convex = -5.019 Volume = -21.401 Anchor = 12.046 Place_loss = 0.016
+iter =    20600/  250000, loss_seg_p = 0.006 loss_seg_y = 1.119 Convex = -5.019 Volume = -21.406 Anchor = 9.020 Place_loss = 0.005
+iter =    20700/  250000, loss_seg_p = 0.003 loss_seg_y = 1.127 Convex = -5.019 Volume = -21.403 Anchor = 8.452 Place_loss = 0.005
+iter =    20800/  250000, loss_seg_p = 0.011 loss_seg_y = 1.232 Convex = -5.018 Volume = -21.392 Anchor = 10.548 Place_loss = 0.012
+iter =    20900/  250000, loss_seg_p = 0.016 loss_seg_y = 1.152 Convex = -5.018 Volume = -21.393 Anchor = 11.058 Place_loss = 0.008
+iter =    21000/  250000, loss_seg_p = 0.009 loss_seg_y = 1.165 Convex = -5.018 Volume = -21.390 Anchor = 10.287 Place_loss = 0.007
+2022-03-20 23:25:17   Begin evaluation on iter    21000/  250000  
+Evaluate for testing data
+===>road:	94.26
+===>sidewalk:	60.71
+===>building:	88.24
+===>wall:	29.11
+===>fence:	39.32
+===>pole:	40.84
+===>light:	47.41
+===>sign:	59.97
+===>vegetation:	88.56
+===>terrain:	46.39
+===>sky:	89.15
+===>person:	71.32
+===>rider:	44.84
+===>car:	90.53
+===>truck:	54.59
+===>bus:	59.25
+===>train:	0.0
+===>motocycle:	50.83
+===>bicycle:	58.6
+===> mIoU: 58.63
+Finish Evaluation: Sun Mar 20 23:34:24 2022
+iter =    21100/  250000, loss_seg_p = 0.006 loss_seg_y = 1.134 Convex = -5.018 Volume = -21.394 Anchor = 8.243 Place_loss = 0.004
+iter =    21200/  250000, loss_seg_p = 0.005 loss_seg_y = 1.134 Convex = -5.018 Volume = -21.389 Anchor = 10.884 Place_loss = 0.006
+iter =    21300/  250000, loss_seg_p = 0.012 loss_seg_y = 1.195 Convex = -5.018 Volume = -21.395 Anchor = 8.587 Place_loss = 0.010
+iter =    21400/  250000, loss_seg_p = 0.014 loss_seg_y = 1.164 Convex = -5.019 Volume = -21.399 Anchor = 10.490 Place_loss = 0.007
+iter =    21500/  250000, loss_seg_p = 0.008 loss_seg_y = 1.179 Convex = -5.020 Volume = -21.404 Anchor = 10.544 Place_loss = 0.009
+iter =    21600/  250000, loss_seg_p = 0.023 loss_seg_y = 1.245 Convex = -5.018 Volume = -21.393 Anchor = 12.929 Place_loss = 0.013
+iter =    21700/  250000, loss_seg_p = 0.012 loss_seg_y = 1.202 Convex = -5.020 Volume = -21.407 Anchor = 9.923 Place_loss = 0.007
+iter =    21800/  250000, loss_seg_p = 0.008 loss_seg_y = 1.126 Convex = -5.019 Volume = -21.399 Anchor = 9.152 Place_loss = 0.004
+iter =    21900/  250000, loss_seg_p = 0.015 loss_seg_y = 1.146 Convex = -5.019 Volume = -21.400 Anchor = 11.286 Place_loss = 0.008
+iter =    22000/  250000, loss_seg_p = 0.005 loss_seg_y = 1.126 Convex = -5.019 Volume = -21.402 Anchor = 9.738 Place_loss = 0.006
+2022-03-20 23:47:17   Begin evaluation on iter    22000/  250000  
+Evaluate for testing data
+===>road:	94.3
+===>sidewalk:	60.4
+===>building:	88.24
+===>wall:	29.81
+===>fence:	39.74
+===>pole:	40.29
+===>light:	45.67
+===>sign:	59.93
+===>vegetation:	88.84
+===>terrain:	47.53
+===>sky:	89.08
+===>person:	71.51
+===>rider:	45.46
+===>car:	90.89
+===>truck:	55.12
+===>bus:	61.01
+===>train:	0.0
+===>motocycle:	52.19
+===>bicycle:	59.26
+===> mIoU: 58.91
+Finish Evaluation: Sun Mar 20 23:56:26 2022
+iter =    22100/  250000, loss_seg_p = 0.021 loss_seg_y = 1.236 Convex = -5.019 Volume = -21.400 Anchor = 13.503 Place_loss = 0.014
+iter =    22200/  250000, loss_seg_p = 0.034 loss_seg_y = 1.900 Convex = -5.019 Volume = -21.400 Anchor = 11.736 Place_loss = 0.013
+iter =    22300/  250000, loss_seg_p = 0.010 loss_seg_y = 1.193 Convex = -5.019 Volume = -21.400 Anchor = 12.324 Place_loss = 0.007
+iter =    22400/  250000, loss_seg_p = 0.005 loss_seg_y = 1.117 Convex = -5.019 Volume = -21.406 Anchor = 10.773 Place_loss = 0.004
+iter =    22500/  250000, loss_seg_p = 0.008 loss_seg_y = 1.124 Convex = -5.019 Volume = -21.401 Anchor = 10.381 Place_loss = 0.007
+iter =    22600/  250000, loss_seg_p = 0.013 loss_seg_y = 1.206 Convex = -5.019 Volume = -21.399 Anchor = 9.473 Place_loss = 0.010
+iter =    22700/  250000, loss_seg_p = 0.017 loss_seg_y = 1.235 Convex = -5.018 Volume = -21.397 Anchor = 8.079 Place_loss = 0.009
+iter =    22800/  250000, loss_seg_p = 0.019 loss_seg_y = 1.219 Convex = -5.018 Volume = -21.391 Anchor = 9.706 Place_loss = 0.012
+iter =    22900/  250000, loss_seg_p = 0.005 loss_seg_y = 1.109 Convex = -5.018 Volume = -21.393 Anchor = 9.653 Place_loss = 0.003
+iter =    23000/  250000, loss_seg_p = 0.003 loss_seg_y = 1.135 Convex = -5.018 Volume = -21.400 Anchor = 7.432 Place_loss = 0.004
+2022-03-21 00:09:21   Begin evaluation on iter    23000/  250000  
+Evaluate for testing data
+===>road:	94.14
+===>sidewalk:	59.76
+===>building:	88.15
+===>wall:	28.37
+===>fence:	39.74
+===>pole:	39.54
+===>light:	43.85
+===>sign:	59.71
+===>vegetation:	88.74
+===>terrain:	46.88
+===>sky:	89.44
+===>person:	70.76
+===>rider:	44.68
+===>car:	90.81
+===>truck:	55.4
+===>bus:	61.67
+===>train:	0.0
+===>motocycle:	51.19
+===>bicycle:	59.32
+===> mIoU: 58.53
+Finish Evaluation: Mon Mar 21 00:18:28 2022
+iter =    23100/  250000, loss_seg_p = 0.003 loss_seg_y = 1.172 Convex = -5.019 Volume = -21.402 Anchor = 13.183 Place_loss = 0.004
+iter =    23200/  250000, loss_seg_p = 0.006 loss_seg_y = 1.147 Convex = -5.019 Volume = -21.404 Anchor = 9.067 Place_loss = 0.007
+iter =    23300/  250000, loss_seg_p = 0.005 loss_seg_y = 1.150 Convex = -5.019 Volume = -21.400 Anchor = 10.220 Place_loss = 0.004
+iter =    23400/  250000, loss_seg_p = 0.019 loss_seg_y = 1.200 Convex = -5.019 Volume = -21.404 Anchor = 11.770 Place_loss = 0.010
+iter =    23500/  250000, loss_seg_p = 0.031 loss_seg_y = 1.237 Convex = -5.020 Volume = -21.407 Anchor = 11.060 Place_loss = 0.010
+iter =    23600/  250000, loss_seg_p = 0.007 loss_seg_y = 1.127 Convex = -5.019 Volume = -21.401 Anchor = 12.264 Place_loss = 0.005
+iter =    23700/  250000, loss_seg_p = 0.007 loss_seg_y = 1.164 Convex = -5.018 Volume = -21.401 Anchor = 10.780 Place_loss = 0.006
+iter =    23800/  250000, loss_seg_p = 0.004 loss_seg_y = 1.109 Convex = -5.018 Volume = -21.399 Anchor = 10.247 Place_loss = 0.004
+iter =    23900/  250000, loss_seg_p = 0.007 loss_seg_y = 1.193 Convex = -5.018 Volume = -21.396 Anchor = 8.671 Place_loss = 0.005
+iter =    24000/  250000, loss_seg_p = 0.008 loss_seg_y = 1.128 Convex = -5.018 Volume = -21.404 Anchor = 15.119 Place_loss = 0.006
+2022-03-21 00:31:24   Begin evaluation on iter    24000/  250000  
+Evaluate for testing data
+===>road:	94.17
+===>sidewalk:	60.42
+===>building:	88.36
+===>wall:	30.07
+===>fence:	39.99
+===>pole:	40.67
+===>light:	47.24
+===>sign:	60.18
+===>vegetation:	88.73
+===>terrain:	47.22
+===>sky:	88.33
+===>person:	70.98
+===>rider:	44.49
+===>car:	90.4
+===>truck:	56.73
+===>bus:	58.13
+===>train:	0.0
+===>motocycle:	52.36
+===>bicycle:	59.1
+===> mIoU: 58.82
+Finish Evaluation: Mon Mar 21 00:40:27 2022
+iter =    24100/  250000, loss_seg_p = 0.008 loss_seg_y = 1.168 Convex = -5.018 Volume = -21.398 Anchor = 11.745 Place_loss = 0.010
+iter =    24200/  250000, loss_seg_p = 0.011 loss_seg_y = 1.181 Convex = -5.019 Volume = -21.403 Anchor = 11.155 Place_loss = 0.006
+iter =    24300/  250000, loss_seg_p = 0.014 loss_seg_y = 1.233 Convex = -5.019 Volume = -21.404 Anchor = 9.528 Place_loss = 0.009
+iter =    24400/  250000, loss_seg_p = 0.012 loss_seg_y = 1.221 Convex = -5.021 Volume = -21.414 Anchor = 10.789 Place_loss = 0.009
+iter =    24500/  250000, loss_seg_p = 0.006 loss_seg_y = 1.164 Convex = -5.021 Volume = -21.411 Anchor = 9.062 Place_loss = 0.008
+iter =    24600/  250000, loss_seg_p = 0.007 loss_seg_y = 1.154 Convex = -5.021 Volume = -21.415 Anchor = 8.972 Place_loss = 0.007
+iter =    24700/  250000, loss_seg_p = 0.007 loss_seg_y = 1.127 Convex = -5.021 Volume = -21.412 Anchor = 12.290 Place_loss = 0.005
+iter =    24800/  250000, loss_seg_p = 0.019 loss_seg_y = 1.121 Convex = -5.019 Volume = -21.403 Anchor = 11.518 Place_loss = 0.006
+iter =    24900/  250000, loss_seg_p = 0.007 loss_seg_y = 1.238 Convex = -5.019 Volume = -21.399 Anchor = 9.681 Place_loss = 0.008
+iter =    25000/  250000, loss_seg_p = 0.007 loss_seg_y = 1.159 Convex = -5.019 Volume = -21.403 Anchor = 9.887 Place_loss = 0.007
+2022-03-21 00:53:35   Begin evaluation on iter    25000/  250000  
+Evaluate for testing data
+===>road:	94.23
+===>sidewalk:	60.58
+===>building:	88.16
+===>wall:	28.71
+===>fence:	38.3
+===>pole:	40.36
+===>light:	46.27
+===>sign:	60.5
+===>vegetation:	88.62
+===>terrain:	46.62
+===>sky:	89.2
+===>person:	70.29
+===>rider:	43.88
+===>car:	90.57
+===>truck:	56.19
+===>bus:	60.54
+===>train:	0.0
+===>motocycle:	50.53
+===>bicycle:	58.78
+===> mIoU: 58.54
+Finish Evaluation: Mon Mar 21 01:02:43 2022
+iter =    25100/  250000, loss_seg_p = 0.008 loss_seg_y = 1.211 Convex = -5.020 Volume = -21.407 Anchor = 8.450 Place_loss = 0.007
+iter =    25200/  250000, loss_seg_p = 0.008 loss_seg_y = 1.226 Convex = -5.020 Volume = -21.412 Anchor = 8.250 Place_loss = 0.007
+iter =    25300/  250000, loss_seg_p = 0.026 loss_seg_y = 1.232 Convex = -5.020 Volume = -21.407 Anchor = 16.401 Place_loss = 0.013
+iter =    25400/  250000, loss_seg_p = 0.011 loss_seg_y = 1.197 Convex = -5.018 Volume = -21.398 Anchor = 10.844 Place_loss = 0.010
+iter =    25500/  250000, loss_seg_p = 0.006 loss_seg_y = 1.110 Convex = -5.018 Volume = -21.399 Anchor = 10.428 Place_loss = 0.004
+iter =    25600/  250000, loss_seg_p = 0.004 loss_seg_y = 1.077 Convex = -5.019 Volume = -21.399 Anchor = 11.191 Place_loss = 0.004
+iter =    25700/  250000, loss_seg_p = 0.009 loss_seg_y = 1.180 Convex = -5.019 Volume = -21.401 Anchor = 11.684 Place_loss = 0.008
+iter =    25800/  250000, loss_seg_p = 0.008 loss_seg_y = 1.148 Convex = -5.019 Volume = -21.400 Anchor = 12.212 Place_loss = 0.006
+iter =    25900/  250000, loss_seg_p = 0.016 loss_seg_y = 1.218 Convex = -5.019 Volume = -21.403 Anchor = 10.076 Place_loss = 0.009
+iter =    26000/  250000, loss_seg_p = 0.009 loss_seg_y = 1.200 Convex = -5.019 Volume = -21.400 Anchor = 10.477 Place_loss = 0.008
+2022-03-21 01:15:40   Begin evaluation on iter    26000/  250000  
+Evaluate for testing data
+===>road:	94.22
+===>sidewalk:	60.55
+===>building:	88.14
+===>wall:	27.98
+===>fence:	38.76
+===>pole:	40.56
+===>light:	45.92
+===>sign:	59.6
+===>vegetation:	88.59
+===>terrain:	47.48
+===>sky:	89.02
+===>person:	71.32
+===>rider:	44.78
+===>car:	90.89
+===>truck:	55.33
+===>bus:	61.25
+===>train:	0.0
+===>motocycle:	51.27
+===>bicycle:	59.39
+===> mIoU: 58.69
+Finish Evaluation: Mon Mar 21 01:24:50 2022
+iter =    26100/  250000, loss_seg_p = 0.003 loss_seg_y = 1.128 Convex = -5.018 Volume = -21.402 Anchor = 8.497 Place_loss = 0.004
+iter =    26200/  250000, loss_seg_p = 0.006 loss_seg_y = 1.122 Convex = -5.018 Volume = -21.404 Anchor = 9.771 Place_loss = 0.005
+iter =    26300/  250000, loss_seg_p = 0.004 loss_seg_y = 1.140 Convex = -5.020 Volume = -21.414 Anchor = 9.200 Place_loss = 0.005
+iter =    26400/  250000, loss_seg_p = 0.009 loss_seg_y = 1.209 Convex = -5.019 Volume = -21.410 Anchor = 10.306 Place_loss = 0.007
+iter =    26500/  250000, loss_seg_p = 0.011 loss_seg_y = 1.204 Convex = -5.018 Volume = -21.398 Anchor = 13.519 Place_loss = 0.009
+iter =    26600/  250000, loss_seg_p = 0.008 loss_seg_y = 1.196 Convex = -5.018 Volume = -21.394 Anchor = 11.328 Place_loss = 0.009
+iter =    26700/  250000, loss_seg_p = 0.027 loss_seg_y = 1.173 Convex = -5.019 Volume = -21.398 Anchor = 11.815 Place_loss = 0.009
+iter =    26800/  250000, loss_seg_p = 0.005 loss_seg_y = 1.199 Convex = -5.020 Volume = -21.402 Anchor = 10.949 Place_loss = 0.006
+iter =    26900/  250000, loss_seg_p = 0.007 loss_seg_y = 1.184 Convex = -5.019 Volume = -21.401 Anchor = 7.829 Place_loss = 0.007
+iter =    27000/  250000, loss_seg_p = 0.011 loss_seg_y = 1.121 Convex = -5.020 Volume = -21.405 Anchor = 11.225 Place_loss = 0.005
+2022-03-21 01:37:45   Begin evaluation on iter    27000/  250000  
+Evaluate for testing data
+===>road:	94.4
+===>sidewalk:	61.22
+===>building:	88.17
+===>wall:	29.17
+===>fence:	38.76
+===>pole:	40.74
+===>light:	47.28
+===>sign:	60.76
+===>vegetation:	88.65
+===>terrain:	47.17
+===>sky:	88.67
+===>person:	71.06
+===>rider:	45.03
+===>car:	90.6
+===>truck:	55.44
+===>bus:	59.03
+===>train:	0.0
+===>motocycle:	50.7
+===>bicycle:	59.81
+===> mIoU: 58.77
+Finish Evaluation: Mon Mar 21 01:46:58 2022
+iter =    27100/  250000, loss_seg_p = 0.037 loss_seg_y = 1.293 Convex = -5.021 Volume = -21.414 Anchor = 12.922 Place_loss = 0.021
+iter =    27200/  250000, loss_seg_p = 0.011 loss_seg_y = 1.199 Convex = -5.019 Volume = -21.400 Anchor = 9.243 Place_loss = 0.011
+iter =    27300/  250000, loss_seg_p = 0.017 loss_seg_y = 1.271 Convex = -5.018 Volume = -21.394 Anchor = 9.359 Place_loss = 0.016
+iter =    27400/  250000, loss_seg_p = 0.002 loss_seg_y = 1.100 Convex = -5.017 Volume = -21.391 Anchor = 9.184 Place_loss = 0.002
+iter =    27500/  250000, loss_seg_p = 0.008 loss_seg_y = 1.184 Convex = -5.019 Volume = -21.404 Anchor = 10.815 Place_loss = 0.005
+iter =    27600/  250000, loss_seg_p = 0.005 loss_seg_y = 1.168 Convex = -5.018 Volume = -21.399 Anchor = 11.544 Place_loss = 0.007
+iter =    27700/  250000, loss_seg_p = 0.011 loss_seg_y = 1.153 Convex = -5.018 Volume = -21.395 Anchor = 10.661 Place_loss = 0.010
+iter =    27800/  250000, loss_seg_p = 0.029 loss_seg_y = 1.310 Convex = -5.019 Volume = -21.398 Anchor = 10.342 Place_loss = 0.007
+iter =    27900/  250000, loss_seg_p = 0.005 loss_seg_y = 1.100 Convex = -5.020 Volume = -21.410 Anchor = 6.604 Place_loss = 0.003
+iter =    28000/  250000, loss_seg_p = 0.020 loss_seg_y = 1.237 Convex = -5.021 Volume = -21.413 Anchor = 9.862 Place_loss = 0.013
+2022-03-21 01:59:52   Begin evaluation on iter    28000/  250000  
+Evaluate for testing data
+===>road:	94.22
+===>sidewalk:	60.85
+===>building:	88.27
+===>wall:	28.12
+===>fence:	39.67
+===>pole:	40.0
+===>light:	46.9
+===>sign:	59.54
+===>vegetation:	88.71
+===>terrain:	47.53
+===>sky:	88.99
+===>person:	71.53
+===>rider:	45.3
+===>car:	90.56
+===>truck:	54.68
+===>bus:	60.97
+===>train:	0.0
+===>motocycle:	51.54
+===>bicycle:	59.55
+===> mIoU: 58.79
+Finish Evaluation: Mon Mar 21 02:09:03 2022
+iter =    28100/  250000, loss_seg_p = 0.006 loss_seg_y = 1.148 Convex = -5.020 Volume = -21.405 Anchor = 9.162 Place_loss = 0.004
+iter =    28200/  250000, loss_seg_p = 0.012 loss_seg_y = 1.220 Convex = -5.020 Volume = -21.405 Anchor = 11.104 Place_loss = 0.011
+iter =    28300/  250000, loss_seg_p = 0.012 loss_seg_y = 1.155 Convex = -5.019 Volume = -21.398 Anchor = 9.545 Place_loss = 0.007
+iter =    28400/  250000, loss_seg_p = 0.016 loss_seg_y = 1.301 Convex = -5.017 Volume = -21.385 Anchor = 6.492 Place_loss = 0.008
+iter =    28500/  250000, loss_seg_p = 0.003 loss_seg_y = 1.133 Convex = -5.019 Volume = -21.396 Anchor = 8.676 Place_loss = 0.003
+iter =    28600/  250000, loss_seg_p = 0.005 loss_seg_y = 1.177 Convex = -5.019 Volume = -21.402 Anchor = 10.408 Place_loss = 0.004
+iter =    28700/  250000, loss_seg_p = 0.006 loss_seg_y = 1.180 Convex = -5.019 Volume = -21.404 Anchor = 10.323 Place_loss = 0.006
+iter =    28800/  250000, loss_seg_p = 0.013 loss_seg_y = 1.158 Convex = -5.020 Volume = -21.406 Anchor = 11.243 Place_loss = 0.008
+iter =    28900/  250000, loss_seg_p = 0.012 loss_seg_y = 1.198 Convex = -5.020 Volume = -21.402 Anchor = 7.514 Place_loss = 0.008
+iter =    29000/  250000, loss_seg_p = 0.015 loss_seg_y = 1.188 Convex = -5.020 Volume = -21.400 Anchor = 9.536 Place_loss = 0.008
+2022-03-21 02:21:59   Begin evaluation on iter    29000/  250000  
+Evaluate for testing data
+===>road:	94.24
+===>sidewalk:	60.4
+===>building:	88.34
+===>wall:	29.15
+===>fence:	39.65
+===>pole:	40.86
+===>light:	45.8
+===>sign:	59.56
+===>vegetation:	88.73
+===>terrain:	47.24
+===>sky:	89.12
+===>person:	71.24
+===>rider:	45.11
+===>car:	90.85
+===>truck:	55.46
+===>bus:	60.87
+===>train:	0.0
+===>motocycle:	51.7
+===>bicycle:	59.23
+===> mIoU: 58.82
+Finish Evaluation: Mon Mar 21 02:31:09 2022
+iter =    29100/  250000, loss_seg_p = 0.035 loss_seg_y = 1.314 Convex = -5.019 Volume = -21.395 Anchor = 9.408 Place_loss = 0.018
+iter =    29200/  250000, loss_seg_p = 0.009 loss_seg_y = 1.146 Convex = -5.019 Volume = -21.392 Anchor = 7.856 Place_loss = 0.005
+iter =    29300/  250000, loss_seg_p = 0.004 loss_seg_y = 1.125 Convex = -5.019 Volume = -21.398 Anchor = 8.981 Place_loss = 0.003
+iter =    29400/  250000, loss_seg_p = 0.005 loss_seg_y = 1.194 Convex = -5.019 Volume = -21.401 Anchor = 9.927 Place_loss = 0.007
+iter =    29500/  250000, loss_seg_p = 0.032 loss_seg_y = 1.292 Convex = -5.020 Volume = -21.405 Anchor = 11.023 Place_loss = 0.017
+iter =    29600/  250000, loss_seg_p = 0.010 loss_seg_y = 1.220 Convex = -5.020 Volume = -21.406 Anchor = 9.512 Place_loss = 0.008
+iter =    29700/  250000, loss_seg_p = 0.012 loss_seg_y = 1.206 Convex = -5.019 Volume = -21.400 Anchor = 15.338 Place_loss = 0.010
+iter =    29800/  250000, loss_seg_p = 0.002 loss_seg_y = 1.105 Convex = -5.018 Volume = -21.394 Anchor = 7.545 Place_loss = 0.003
+iter =    29900/  250000, loss_seg_p = 0.007 loss_seg_y = 1.163 Convex = -5.020 Volume = -21.403 Anchor = 8.618 Place_loss = 0.006
+iter =    30000/  250000, loss_seg_p = 0.009 loss_seg_y = 1.165 Convex = -5.020 Volume = -21.400 Anchor = 10.166 Place_loss = 0.006
+2022-03-21 02:44:15   Begin evaluation on iter    30000/  250000  
+Evaluate for testing data
+===>road:	94.32
+===>sidewalk:	60.66
+===>building:	88.29
+===>wall:	30.34
+===>fence:	39.56
+===>pole:	39.67
+===>light:	46.46
+===>sign:	60.31
+===>vegetation:	88.62
+===>terrain:	46.79
+===>sky:	89.41
+===>person:	71.5
+===>rider:	45.6
+===>car:	90.93
+===>truck:	57.06
+===>bus:	62.26
+===>train:	0.0
+===>motocycle:	51.71
+===>bicycle:	59.93
+===> mIoU: 59.13
+Finish Evaluation: Mon Mar 21 02:53:25 2022
+Saving model with mIoU:  59.13
+iter =    30100/  250000, loss_seg_p = 0.009 loss_seg_y = 1.206 Convex = -5.020 Volume = -21.401 Anchor = 15.449 Place_loss = 0.008
+iter =    30200/  250000, loss_seg_p = 0.014 loss_seg_y = 1.198 Convex = -5.019 Volume = -21.396 Anchor = 11.167 Place_loss = 0.011
+iter =    30300/  250000, loss_seg_p = 0.009 loss_seg_y = 1.119 Convex = -5.019 Volume = -21.399 Anchor = 10.737 Place_loss = 0.005
+iter =    30400/  250000, loss_seg_p = 0.009 loss_seg_y = 1.205 Convex = -5.019 Volume = -21.403 Anchor = 10.711 Place_loss = 0.008
+iter =    30500/  250000, loss_seg_p = 0.010 loss_seg_y = 1.157 Convex = -5.020 Volume = -21.402 Anchor = 11.795 Place_loss = 0.008
+iter =    30600/  250000, loss_seg_p = 0.008 loss_seg_y = 1.199 Convex = -5.018 Volume = -21.386 Anchor = 9.658 Place_loss = 0.007
+iter =    30700/  250000, loss_seg_p = 0.011 loss_seg_y = 1.179 Convex = -5.019 Volume = -21.400 Anchor = 11.325 Place_loss = 0.007
+iter =    30800/  250000, loss_seg_p = 0.013 loss_seg_y = 1.211 Convex = -5.019 Volume = -21.400 Anchor = 11.017 Place_loss = 0.010
+iter =    30900/  250000, loss_seg_p = 0.002 loss_seg_y = 1.137 Convex = -5.019 Volume = -21.399 Anchor = 5.246 Place_loss = 0.002
+iter =    31000/  250000, loss_seg_p = 0.012 loss_seg_y = 1.291 Convex = -5.019 Volume = -21.396 Anchor = 8.576 Place_loss = 0.011
+2022-03-21 03:06:22   Begin evaluation on iter    31000/  250000  
+Evaluate for testing data
+===>road:	94.13
+===>sidewalk:	59.81
+===>building:	88.39
+===>wall:	29.61
+===>fence:	38.17
+===>pole:	41.25
+===>light:	47.46
+===>sign:	60.07
+===>vegetation:	88.65
+===>terrain:	45.56
+===>sky:	89.62
+===>person:	71.49
+===>rider:	44.66
+===>car:	90.53
+===>truck:	56.31
+===>bus:	59.02
+===>train:	0.0
+===>motocycle:	50.17
+===>bicycle:	57.84
+===> mIoU: 58.56
+Finish Evaluation: Mon Mar 21 03:15:32 2022
+iter =    31100/  250000, loss_seg_p = 0.004 loss_seg_y = 1.135 Convex = -5.018 Volume = -21.392 Anchor = 11.316 Place_loss = 0.005
+iter =    31200/  250000, loss_seg_p = 0.013 loss_seg_y = 1.232 Convex = -5.018 Volume = -21.393 Anchor = 12.965 Place_loss = 0.013
+iter =    31300/  250000, loss_seg_p = 0.002 loss_seg_y = 1.146 Convex = -5.020 Volume = -21.403 Anchor = 7.448 Place_loss = 0.002
+iter =    31400/  250000, loss_seg_p = 0.006 loss_seg_y = 1.225 Convex = -5.020 Volume = -21.404 Anchor = 7.795 Place_loss = 0.005
+iter =    31500/  250000, loss_seg_p = 0.017 loss_seg_y = 1.280 Convex = -5.020 Volume = -21.402 Anchor = 10.618 Place_loss = 0.013
+iter =    31600/  250000, loss_seg_p = 0.006 loss_seg_y = 1.132 Convex = -5.019 Volume = -21.397 Anchor = 11.074 Place_loss = 0.006
+iter =    31700/  250000, loss_seg_p = 0.015 loss_seg_y = 1.176 Convex = -5.018 Volume = -21.390 Anchor = 9.636 Place_loss = 0.008
+iter =    31800/  250000, loss_seg_p = 0.007 loss_seg_y = 1.147 Convex = -5.019 Volume = -21.398 Anchor = 11.836 Place_loss = 0.006
+iter =    31900/  250000, loss_seg_p = 0.006 loss_seg_y = 1.125 Convex = -5.020 Volume = -21.402 Anchor = 8.593 Place_loss = 0.005
+iter =    32000/  250000, loss_seg_p = 0.006 loss_seg_y = 1.181 Convex = -5.019 Volume = -21.399 Anchor = 14.744 Place_loss = 0.007
+2022-03-21 03:28:26   Begin evaluation on iter    32000/  250000  
+Evaluate for testing data
+===>road:	94.08
+===>sidewalk:	60.06
+===>building:	88.34
+===>wall:	29.16
+===>fence:	38.79
+===>pole:	40.44
+===>light:	47.54
+===>sign:	59.53
+===>vegetation:	88.7
+===>terrain:	47.0
+===>sky:	89.26
+===>person:	71.06
+===>rider:	44.78
+===>car:	90.62
+===>truck:	55.9
+===>bus:	61.62
+===>train:	0.0
+===>motocycle:	51.24
+===>bicycle:	58.06
+===> mIoU: 58.75
+Finish Evaluation: Mon Mar 21 03:37:37 2022
+iter =    32100/  250000, loss_seg_p = 0.010 loss_seg_y = 1.154 Convex = -5.019 Volume = -21.396 Anchor = 14.720 Place_loss = 0.006
+iter =    32200/  250000, loss_seg_p = 0.017 loss_seg_y = 1.304 Convex = -5.020 Volume = -21.399 Anchor = 8.863 Place_loss = 0.015
+iter =    32300/  250000, loss_seg_p = 0.012 loss_seg_y = 1.168 Convex = -5.020 Volume = -21.403 Anchor = 12.996 Place_loss = 0.007
+iter =    32400/  250000, loss_seg_p = 0.005 loss_seg_y = 1.143 Convex = -5.019 Volume = -21.395 Anchor = 8.682 Place_loss = 0.006
+iter =    32500/  250000, loss_seg_p = 0.010 loss_seg_y = 1.158 Convex = -5.020 Volume = -21.403 Anchor = 9.601 Place_loss = 0.006
+iter =    32600/  250000, loss_seg_p = 0.025 loss_seg_y = 1.246 Convex = -5.020 Volume = -21.408 Anchor = 12.853 Place_loss = 0.011
+iter =    32700/  250000, loss_seg_p = 0.017 loss_seg_y = 1.156 Convex = -5.020 Volume = -21.404 Anchor = 14.603 Place_loss = 0.009
+iter =    32800/  250000, loss_seg_p = 0.004 loss_seg_y = 1.119 Convex = -5.019 Volume = -21.400 Anchor = 12.699 Place_loss = 0.004
+iter =    32900/  250000, loss_seg_p = 0.030 loss_seg_y = 1.161 Convex = -5.020 Volume = -21.405 Anchor = 8.660 Place_loss = 0.007
+iter =    33000/  250000, loss_seg_p = 0.004 loss_seg_y = 1.119 Convex = -5.021 Volume = -21.414 Anchor = 12.436 Place_loss = 0.004
+2022-03-21 03:50:32   Begin evaluation on iter    33000/  250000  
+Evaluate for testing data
+===>road:	94.4
+===>sidewalk:	61.66
+===>building:	88.47
+===>wall:	29.6
+===>fence:	39.85
+===>pole:	40.34
+===>light:	47.09
+===>sign:	60.46
+===>vegetation:	88.59
+===>terrain:	47.28
+===>sky:	89.51
+===>person:	71.45
+===>rider:	45.06
+===>car:	90.91
+===>truck:	56.5
+===>bus:	61.76
+===>train:	0.0
+===>motocycle:	52.61
+===>bicycle:	58.92
+===> mIoU: 59.18
+Finish Evaluation: Mon Mar 21 03:59:40 2022
+Saving model with mIoU:  59.18
+iter =    33100/  250000, loss_seg_p = 0.005 loss_seg_y = 1.144 Convex = -5.022 Volume = -21.414 Anchor = 8.433 Place_loss = 0.004
+iter =    33200/  250000, loss_seg_p = 0.022 loss_seg_y = 1.222 Convex = -5.021 Volume = -21.414 Anchor = 13.244 Place_loss = 0.011
+iter =    33300/  250000, loss_seg_p = 0.004 loss_seg_y = 1.130 Convex = -5.022 Volume = -21.414 Anchor = 8.498 Place_loss = 0.005
+iter =    33400/  250000, loss_seg_p = 0.007 loss_seg_y = 1.144 Convex = -5.021 Volume = -21.409 Anchor = 8.508 Place_loss = 0.005
+iter =    33500/  250000, loss_seg_p = 0.012 loss_seg_y = 1.239 Convex = -5.019 Volume = -21.403 Anchor = 11.580 Place_loss = 0.015
+iter =    33600/  250000, loss_seg_p = 0.019 loss_seg_y = 1.247 Convex = -5.019 Volume = -21.399 Anchor = 8.511 Place_loss = 0.010
+iter =    33700/  250000, loss_seg_p = 0.005 loss_seg_y = 1.130 Convex = -5.020 Volume = -21.405 Anchor = 8.458 Place_loss = 0.003
+iter =    33800/  250000, loss_seg_p = 0.014 loss_seg_y = 1.187 Convex = -5.020 Volume = -21.402 Anchor = 14.196 Place_loss = 0.009
+iter =    33900/  250000, loss_seg_p = 0.009 loss_seg_y = 1.197 Convex = -5.021 Volume = -21.413 Anchor = 10.366 Place_loss = 0.008
+iter =    34000/  250000, loss_seg_p = 0.014 loss_seg_y = 1.337 Convex = -5.020 Volume = -21.405 Anchor = 10.962 Place_loss = 0.012
+2022-03-21 04:12:36   Begin evaluation on iter    34000/  250000  
+Evaluate for testing data
+===>road:	94.19
+===>sidewalk:	59.93
+===>building:	88.37
+===>wall:	30.48
+===>fence:	39.81
+===>pole:	40.46
+===>light:	47.16
+===>sign:	60.71
+===>vegetation:	88.74
+===>terrain:	47.24
+===>sky:	89.46
+===>person:	71.34
+===>rider:	45.25
+===>car:	90.9
+===>truck:	56.48
+===>bus:	60.88
+===>train:	0.0
+===>motocycle:	52.57
+===>bicycle:	59.26
+===> mIoU: 59.12
+Finish Evaluation: Mon Mar 21 04:21:38 2022
+iter =    34100/  250000, loss_seg_p = 0.010 loss_seg_y = 1.200 Convex = -5.020 Volume = -21.400 Anchor = 10.004 Place_loss = 0.008
+iter =    34200/  250000, loss_seg_p = 0.006 loss_seg_y = 1.133 Convex = -5.020 Volume = -21.400 Anchor = 10.617 Place_loss = 0.006
+iter =    34300/  250000, loss_seg_p = 0.007 loss_seg_y = 1.205 Convex = -5.020 Volume = -21.405 Anchor = 8.552 Place_loss = 0.006
+iter =    34400/  250000, loss_seg_p = 0.009 loss_seg_y = 1.133 Convex = -5.020 Volume = -21.406 Anchor = 10.944 Place_loss = 0.007
+iter =    34500/  250000, loss_seg_p = 0.006 loss_seg_y = 1.150 Convex = -5.021 Volume = -21.406 Anchor = 10.061 Place_loss = 0.006
+iter =    34600/  250000, loss_seg_p = 0.007 loss_seg_y = 1.120 Convex = -5.019 Volume = -21.395 Anchor = 9.435 Place_loss = 0.005
+iter =    34700/  250000, loss_seg_p = 0.004 loss_seg_y = 1.119 Convex = -5.019 Volume = -21.394 Anchor = 10.584 Place_loss = 0.004
+iter =    34800/  250000, loss_seg_p = 0.004 loss_seg_y = 1.164 Convex = -5.019 Volume = -21.395 Anchor = 11.968 Place_loss = 0.005
+iter =    34900/  250000, loss_seg_p = 0.005 loss_seg_y = 1.118 Convex = -5.019 Volume = -21.397 Anchor = 7.434 Place_loss = 0.002
+iter =    35000/  250000, loss_seg_p = 0.003 loss_seg_y = 1.131 Convex = -5.020 Volume = -21.401 Anchor = 10.134 Place_loss = 0.004
+2022-03-21 04:34:45   Begin evaluation on iter    35000/  250000  
+Evaluate for testing data
+===>road:	94.11
+===>sidewalk:	59.85
+===>building:	88.32
+===>wall:	29.77
+===>fence:	39.75
+===>pole:	40.28
+===>light:	45.81
+===>sign:	59.33
+===>vegetation:	88.66
+===>terrain:	46.59
+===>sky:	89.37
+===>person:	71.27
+===>rider:	44.91
+===>car:	90.87
+===>truck:	56.81
+===>bus:	61.77
+===>train:	0.0
+===>motocycle:	51.68
+===>bicycle:	59.03
+===> mIoU: 58.85
+Finish Evaluation: Mon Mar 21 04:43:55 2022
+iter =    35100/  250000, loss_seg_p = 0.003 loss_seg_y = 1.075 Convex = -5.019 Volume = -21.403 Anchor = 11.256 Place_loss = 0.003
+iter =    35200/  250000, loss_seg_p = 0.010 loss_seg_y = 1.209 Convex = -5.020 Volume = -21.407 Anchor = 10.139 Place_loss = 0.009
+iter =    35300/  250000, loss_seg_p = 0.005 loss_seg_y = 1.122 Convex = -5.020 Volume = -21.404 Anchor = 10.607 Place_loss = 0.004
+iter =    35400/  250000, loss_seg_p = 0.010 loss_seg_y = 1.166 Convex = -5.020 Volume = -21.399 Anchor = 12.824 Place_loss = 0.010
+iter =    35500/  250000, loss_seg_p = 0.006 loss_seg_y = 1.169 Convex = -5.020 Volume = -21.399 Anchor = 8.872 Place_loss = 0.007
+iter =    35600/  250000, loss_seg_p = 0.032 loss_seg_y = 1.227 Convex = -5.019 Volume = -21.395 Anchor = 9.448 Place_loss = 0.008
+iter =    35700/  250000, loss_seg_p = 0.006 loss_seg_y = 1.187 Convex = -5.021 Volume = -21.404 Anchor = 11.585 Place_loss = 0.007
+iter =    35800/  250000, loss_seg_p = 0.004 loss_seg_y = 1.114 Convex = -5.020 Volume = -21.404 Anchor = 7.746 Place_loss = 0.003
+iter =    35900/  250000, loss_seg_p = 0.007 loss_seg_y = 1.140 Convex = -5.019 Volume = -21.398 Anchor = 10.833 Place_loss = 0.007
+iter =    36000/  250000, loss_seg_p = 0.008 loss_seg_y = 1.147 Convex = -5.019 Volume = -21.402 Anchor = 11.373 Place_loss = 0.007
+2022-03-21 04:56:48   Begin evaluation on iter    36000/  250000  
+Evaluate for testing data
+===>road:	94.3
+===>sidewalk:	60.73
+===>building:	88.32
+===>wall:	30.12
+===>fence:	38.89
+===>pole:	40.88
+===>light:	46.74
+===>sign:	59.79
+===>vegetation:	88.79
+===>terrain:	47.42
+===>sky:	88.95
+===>person:	71.12
+===>rider:	45.14
+===>car:	90.64
+===>truck:	56.13
+===>bus:	59.5
+===>train:	0.0
+===>motocycle:	51.28
+===>bicycle:	58.88
+===> mIoU: 58.82
+Finish Evaluation: Mon Mar 21 05:05:56 2022
+iter =    36100/  250000, loss_seg_p = 0.011 loss_seg_y = 1.194 Convex = -5.018 Volume = -21.394 Anchor = 9.123 Place_loss = 0.007
+iter =    36200/  250000, loss_seg_p = 0.005 loss_seg_y = 1.174 Convex = -5.019 Volume = -21.405 Anchor = 8.735 Place_loss = 0.005
+iter =    36300/  250000, loss_seg_p = 0.005 loss_seg_y = 1.173 Convex = -5.019 Volume = -21.396 Anchor = 11.777 Place_loss = 0.008
+iter =    36400/  250000, loss_seg_p = 0.008 loss_seg_y = 1.188 Convex = -5.021 Volume = -21.413 Anchor = 12.065 Place_loss = 0.007
+iter =    36500/  250000, loss_seg_p = 0.012 loss_seg_y = 1.190 Convex = -5.022 Volume = -21.413 Anchor = 11.542 Place_loss = 0.010
+iter =    36600/  250000, loss_seg_p = 0.015 loss_seg_y = 1.207 Convex = -5.020 Volume = -21.401 Anchor = 12.495 Place_loss = 0.009
+iter =    36700/  250000, loss_seg_p = 0.014 loss_seg_y = 1.173 Convex = -5.020 Volume = -21.403 Anchor = 8.232 Place_loss = 0.006
+iter =    36800/  250000, loss_seg_p = 0.021 loss_seg_y = 1.194 Convex = -5.020 Volume = -21.402 Anchor = 13.461 Place_loss = 0.008
+iter =    36900/  250000, loss_seg_p = 0.028 loss_seg_y = 1.229 Convex = -5.020 Volume = -21.404 Anchor = 11.868 Place_loss = 0.010
+iter =    37000/  250000, loss_seg_p = 0.014 loss_seg_y = 1.158 Convex = -5.021 Volume = -21.410 Anchor = 7.059 Place_loss = 0.006
+2022-03-21 05:18:53   Begin evaluation on iter    37000/  250000  
+Evaluate for testing data
+===>road:	94.24
+===>sidewalk:	60.62
+===>building:	88.19
+===>wall:	30.35
+===>fence:	39.38
+===>pole:	40.55
+===>light:	44.84
+===>sign:	58.93
+===>vegetation:	88.81
+===>terrain:	47.61
+===>sky:	88.78
+===>person:	71.12
+===>rider:	45.25
+===>car:	90.64
+===>truck:	55.92
+===>bus:	59.7
+===>train:	0.0
+===>motocycle:	50.93
+===>bicycle:	59.27
+===> mIoU: 58.69
+Finish Evaluation: Mon Mar 21 05:28:15 2022
+iter =    37100/  250000, loss_seg_p = 0.008 loss_seg_y = 1.222 Convex = -5.020 Volume = -21.406 Anchor = 8.463 Place_loss = 0.010
+iter =    37200/  250000, loss_seg_p = 0.003 loss_seg_y = 1.109 Convex = -5.020 Volume = -21.406 Anchor = 10.231 Place_loss = 0.002
+iter =    37300/  250000, loss_seg_p = 0.010 loss_seg_y = 1.195 Convex = -5.021 Volume = -21.413 Anchor = 11.726 Place_loss = 0.007
+iter =    37400/  250000, loss_seg_p = 0.004 loss_seg_y = 1.145 Convex = -5.020 Volume = -21.403 Anchor = 7.809 Place_loss = 0.006
+iter =    37500/  250000, loss_seg_p = 0.007 loss_seg_y = 1.201 Convex = -5.018 Volume = -21.395 Anchor = 11.596 Place_loss = 0.005
+iter =    37600/  250000, loss_seg_p = 0.021 loss_seg_y = 1.163 Convex = -5.019 Volume = -21.397 Anchor = 11.708 Place_loss = 0.006
+iter =    37700/  250000, loss_seg_p = 0.005 loss_seg_y = 1.151 Convex = -5.019 Volume = -21.399 Anchor = 7.792 Place_loss = 0.007
+iter =    37800/  250000, loss_seg_p = 0.007 loss_seg_y = 1.125 Convex = -5.020 Volume = -21.406 Anchor = 9.115 Place_loss = 0.005
+iter =    37900/  250000, loss_seg_p = 0.017 loss_seg_y = 1.261 Convex = -5.020 Volume = -21.405 Anchor = 8.799 Place_loss = 0.011
+iter =    38000/  250000, loss_seg_p = 0.005 loss_seg_y = 1.110 Convex = -5.021 Volume = -21.404 Anchor = 7.883 Place_loss = 0.004
+2022-03-21 05:41:15   Begin evaluation on iter    38000/  250000  
+Evaluate for testing data
+===>road:	94.07
+===>sidewalk:	59.81
+===>building:	88.19
+===>wall:	28.59
+===>fence:	38.8
+===>pole:	39.96
+===>light:	46.38
+===>sign:	59.89
+===>vegetation:	88.77
+===>terrain:	47.37
+===>sky:	89.0
+===>person:	71.25
+===>rider:	45.36
+===>car:	90.48
+===>truck:	56.97
+===>bus:	59.68
+===>train:	0.0
+===>motocycle:	51.69
+===>bicycle:	59.14
+===> mIoU: 58.71
+Finish Evaluation: Mon Mar 21 05:50:34 2022
+iter =    38100/  250000, loss_seg_p = 0.014 loss_seg_y = 1.212 Convex = -5.021 Volume = -21.406 Anchor = 14.649 Place_loss = 0.009
+iter =    38200/  250000, loss_seg_p = 0.006 loss_seg_y = 1.219 Convex = -5.021 Volume = -21.407 Anchor = 10.180 Place_loss = 0.006
+iter =    38300/  250000, loss_seg_p = 0.005 loss_seg_y = 1.152 Convex = -5.021 Volume = -21.409 Anchor = 12.579 Place_loss = 0.005
+iter =    38400/  250000, loss_seg_p = 0.006 loss_seg_y = 1.139 Convex = -5.021 Volume = -21.414 Anchor = 12.938 Place_loss = 0.005
+iter =    38500/  250000, loss_seg_p = 0.004 loss_seg_y = 1.146 Convex = -5.021 Volume = -21.411 Anchor = 12.014 Place_loss = 0.006
+iter =    38600/  250000, loss_seg_p = 0.008 loss_seg_y = 1.170 Convex = -5.020 Volume = -21.409 Anchor = 10.353 Place_loss = 0.003
+iter =    38700/  250000, loss_seg_p = 0.010 loss_seg_y = 1.151 Convex = -5.021 Volume = -21.414 Anchor = 9.847 Place_loss = 0.007
+iter =    38800/  250000, loss_seg_p = 0.007 loss_seg_y = 1.134 Convex = -5.022 Volume = -21.415 Anchor = 10.356 Place_loss = 0.004
+iter =    38900/  250000, loss_seg_p = 0.004 loss_seg_y = 1.151 Convex = -5.019 Volume = -21.404 Anchor = 9.626 Place_loss = 0.005
+iter =    39000/  250000, loss_seg_p = 0.012 loss_seg_y = 1.167 Convex = -5.019 Volume = -21.397 Anchor = 9.324 Place_loss = 0.008
+2022-03-21 06:03:34   Begin evaluation on iter    39000/  250000  
+Evaluate for testing data
+===>road:	94.19
+===>sidewalk:	60.3
+===>building:	88.23
+===>wall:	30.83
+===>fence:	39.16
+===>pole:	40.44
+===>light:	45.33
+===>sign:	59.43
+===>vegetation:	88.49
+===>terrain:	46.92
+===>sky:	88.5
+===>person:	71.16
+===>rider:	44.66
+===>car:	90.93
+===>truck:	55.82
+===>bus:	61.03
+===>train:	0.0
+===>motocycle:	51.7
+===>bicycle:	58.86
+===> mIoU: 58.74
+Finish Evaluation: Mon Mar 21 06:12:54 2022
+iter =    39100/  250000, loss_seg_p = 0.006 loss_seg_y = 1.227 Convex = -5.021 Volume = -21.409 Anchor = 13.393 Place_loss = 0.008
+iter =    39200/  250000, loss_seg_p = 0.043 loss_seg_y = 1.208 Convex = -5.019 Volume = -21.393 Anchor = 12.945 Place_loss = 0.010
+iter =    39300/  250000, loss_seg_p = 0.011 loss_seg_y = 1.193 Convex = -5.020 Volume = -21.406 Anchor = 10.551 Place_loss = 0.008
+iter =    39400/  250000, loss_seg_p = 0.006 loss_seg_y = 1.161 Convex = -5.020 Volume = -21.401 Anchor = 9.773 Place_loss = 0.006
+iter =    39500/  250000, loss_seg_p = 0.016 loss_seg_y = 1.253 Convex = -5.020 Volume = -21.399 Anchor = 12.274 Place_loss = 0.012
+iter =    39600/  250000, loss_seg_p = 0.007 loss_seg_y = 1.165 Convex = -5.020 Volume = -21.394 Anchor = 16.069 Place_loss = 0.007
+iter =    39700/  250000, loss_seg_p = 0.005 loss_seg_y = 1.129 Convex = -5.021 Volume = -21.402 Anchor = 12.769 Place_loss = 0.005
+iter =    39800/  250000, loss_seg_p = 0.018 loss_seg_y = 1.213 Convex = -5.019 Volume = -21.391 Anchor = 9.466 Place_loss = 0.010
+iter =    39900/  250000, loss_seg_p = 0.016 loss_seg_y = 1.215 Convex = -5.021 Volume = -21.401 Anchor = 13.537 Place_loss = 0.012
+save model ...
