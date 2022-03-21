@@ -13,6 +13,7 @@ This repository is for our CVPR 2022 paper ["SimT: Handling Open-set Noise for D
 ## Usage:
 ### Requirement:
 Pytorch 1.3 & Pytorch 1.7 are ok
+
 Python 3.6
 
 ### Preprocessing:
@@ -30,6 +31,7 @@ The pseudo labels generated from the UDA black box of BAPA-Net [1] can be downlo
 The pseudo labels generated from the SFDA black box of SFDASeg [2] can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1oi98NhGngXCoCQPhJ9IpX_GvRY1XgA2R?usp=sharing)
 
 [1] Yahao Liu, Jinhong Deng, Xinchen Gao, Wen Li, and Lixin Duan. Bapa-net: Boundary adaptation and prototype align- ment for cross-domain semantic segmentation. In ICCV, pages 8801–8811, 2021.
+
 [2] Jogendra Nath Kundu, Akshay Kulkarni, Amit Singh,Varun Jampani, and R Venkatesh Babu. Generalize then adapt: Source-free domain adaptive semantic segmentation. In ICCV, pages 7046–7056, 2021.
 
 ### Pretrained model:
