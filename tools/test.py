@@ -26,7 +26,7 @@ import datetime
 import itertools
 import pandas as pd
 import _init_paths
-from evaluate_cityscapes import evaluate_nopngsave, evaluate_Single
+from evaluate_cityscapes import evaluate_simt, evaluate_warmup
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 
@@ -42,9 +42,7 @@ DATA_LIST_PATH = '../dataset/gta5_list/val.txt'
 IGNORE_LABEL = 255
 INPUT_SIZE = '1024,512'
 DATA_DIRECTORY_TARGET = '/home/xiaoqiguo2/scratch/UDA_Natural/Cityscapes'
-DATA_LIST_PATH_TARGET = '../dataset/cityscapes_list/pseudo_adapt.lst'
-# DATA_LIST_PATH_TARGET = '../dataset/cityscapes_list/pseudo_adaptWarm.lst'
-# DATA_LIST_PATH_TARGET = '../dataset/cityscapes_list/pseudo_dsp.lst'
+DATA_LIST_PATH_TARGET = '../dataset/cityscapes_list/pseudo_bapa.lst'
 INPUT_SIZE_TARGET = '1024,512'
 LEARNING_RATE = 2.5e-4
 LEARNING_RATE_T = 2.5e-3
@@ -56,9 +54,6 @@ NUM_STEPS_STOP = 40000  # early stopping
 POWER = 0.9
 RANDOM_SEED = 1234
 RESTORE_FROM = '../snapshots/AdaptSeg.pth'
-# RESTORE_FROM = '../snapshots/Pseudo_Adaptsegnet.pth'
-# RESTORE_FROM = '../snapshots/resnet_pretrain.pth'
-# RESTORE_FROM = '../snapshots/DSP_best.pth'
 SAVE_PRED_EVERY = 1000
 SNAPSHOT_DIR = '../snapshots/AdaptSegNet/'
 WEIGHT_DECAY = 0.0005
@@ -244,8 +239,7 @@ def main():
 
     now = datetime.datetime.now()
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
-    # mIoU = evaluate_nopngsave(model)
-    mIoU = evaluate_Single(model)
+    mIoU = evaluate_simt(model)
     print('Finish Evaluation: '+time.asctime(time.localtime(time.time())))
 
 if __name__ == '__main__':
