@@ -205,7 +205,7 @@ def Placeholder_loss(pred, num_classes, open_classes, thres=None):
     pseudo = torch.argmax(pred, dim=1).long()
     pseudo_onehot = torch.eye(num_classes + open_classes)[pseudo].permute(0, 3, 1, 2).float().cuda()
     zeros = torch.zeros_like(pseudo_onehot)
-    ones = torch.ones_like(pseudo_onehot)
+    ones = torch.zeros_like(pseudo_onehot)
     predict = torch.where(pseudo_onehot > zeros, -1000. * ones, pred)
 
     #### del pixels with armgmax < num_classes ####
