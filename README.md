@@ -26,7 +26,7 @@ bash sh_simt.sh ## Stage of training with SimT
 ```
 
 ### Data preparation:
-The pseudo labels generated from the UDA black box of BAPA-Net [1] can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1lehNWiG6YPkJd5EvXl8-qgoT5iemJ-Y9?usp=sharing)
+The pseudo labels generated from the UDA black box of BAPA-Net [1] can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1Y1ujTw9PzrX61jirSZgypMumQrjZXp18?usp=sharing)
 
 The pseudo labels generated from the SFDA black box of SFDASeg [2] can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1oi98NhGngXCoCQPhJ9IpX_GvRY1XgA2R?usp=sharing)
 
