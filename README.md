@@ -5,7 +5,11 @@ by [Xiaoqing Guo](https://guo-xiaoqing.github.io/).
 ## Summary:
 
 ### Intoduction:
-This repository is for our CVPR 2022 paper ["SimT: Handling Open-set Noise for Domain Adaptive Semantic Segmentation"](https://arxiv.org/abs/2203.15202)([知乎](https://zhuanlan.zhihu.com/p/475830652))
+This repository is for our CVPR 2022 paper ["SimT: Handling Open-set Noise for Domain Adaptive Semantic Segmentation"](https://arxiv.org/abs/2203.15202)([知乎](https://zhuanlan.zhihu.com/p/475830652)) and IEEE TPAMI 2023 paper ["Handling Open-set Noise and Novel Target Recognition in Domain Adaptive Semantic Segmentation"]()
+
+Two branches of the project:
+- Main branch (SimT-CVPR): ```git clone https://github.com/CityU-AIM-Group/SimT.git```
+- [SimT-TPAMI](https://github.com/CityU-AIM-Group/SIGMA/tree/SimT-TPAMI23) branch: ```git clone -b SimT-TPAMI23 https://github.com/CityU-AIM-Group/SimT.git```
 
 ### Framework:
 ![](https://github.com/CityU-AIM-Group/SimT/blob/main/network.png)
