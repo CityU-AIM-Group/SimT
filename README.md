@@ -5,10 +5,21 @@ by [Xiaoqing Guo](https://guo-xiaoqing.github.io/).
 ## Summary:
 
 ### Intoduction:
-This repository is for our CVPR 2022 paper ["SimT: Handling Open-set Noise for Domain Adaptive Semantic Segmentation"](https://arxiv.org/abs/2203.15202)([知乎](https://zhuanlan.zhihu.com/p/475830652))
+This repository is for our CVPR 2022 paper ["SimT: Handling Open-set Noise for Domain Adaptive Semantic Segmentation"](https://arxiv.org/abs/2203.15202)([知乎](https://zhuanlan.zhihu.com/p/475830652)) and IEEE TPAMI 2023 paper ["Handling Open-set Noise and Novel Target Recognition in Domain Adaptive Semantic Segmentation"]()
+
+Two branches of the project:
+- Main branch (SimT-CVPR): ```git clone https://github.com/CityU-AIM-Group/SimT.git```
+- [SimT-TPAMI](https://github.com/CityU-AIM-Group/SIGMA/tree/SimT-TPAMI23) branch: ```git clone -b SimT-TPAMI23 https://github.com/CityU-AIM-Group/SimT.git```
+
+Contributions of [SimT-TPAMI](https://github.com/CityU-AIM-Group/SIGMA/tree/SimT-TPAMI23):
+- We not merely focus on alleviating the open-set label noises, but also extend SimT to novel target recognition task. To the best of our knowledge, we represent the first effort to solve the novel target recognition problem using noise transition matrix without the supervision from open-set classes. 
+- When handling mixed closed-set and open-set label noises, in addition to the previously proposed three regularizers, we further propose a new semantic constraint regularizer to estimate SimT with inter-class semantic relation guidance, thereby preventing trivial solution, meanwhile, benefiting the newly tackled novel target recognition task.
+- In novel target recognition task, we devise a C2OLC method that utilizes SimT to provide supervisions for open-set classes. Moreover, a SR loss is designed to preserve the semantic structure of closed-set and open-set class data distribution.
 
 ### Framework:
-![](https://github.com/CityU-AIM-Group/SimT/blob/main/network.png)
+![](https://github.com/CityU-AIM-Group/SimT/blob/main/network1.png)
+
+![](https://github.com/CityU-AIM-Group/SimT/blob/main/network2.png)
 
 ## Usage:
 ### Requirement:
