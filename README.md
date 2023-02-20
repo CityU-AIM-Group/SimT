@@ -9,7 +9,7 @@ This repository is for our CVPR 2022 paper ["SimT: Handling Open-set Noise for D
 
 Two branches of the project:
 - Main branch (SimT-CVPR): ```git clone https://github.com/CityU-AIM-Group/SimT.git```
-- [SimT-TPAMI](https://github.com/CityU-AIM-Group/SIGMA/tree/SimT-TPAMI23) branch: ```git clone -b SimT-TPAMI23 https://github.com/CityU-AIM-Group/SimT.git```
+- [SimT-TPAMI](https://github.com/CityU-AIM-Group/SimT/tree/SimT-TPAMI23) branch: ```git clone -b SimT-TPAMI23 https://github.com/CityU-AIM-Group/SimT.git```
 
 ### Framework:
 ![](https://github.com/CityU-AIM-Group/SimT/blob/main/network.png)
