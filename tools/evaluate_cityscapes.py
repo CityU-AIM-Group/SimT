@@ -213,7 +213,7 @@ def evaluate_simt_3unknown(seg_model, pred_dir=None, devkit_dir='/home/wzhou38/S
     hist = np.zeros((num_classes, num_classes))
 
     if with_prior:
-        sprior = io.loadmat('../prior_array.mat')
+        sprior = io.loadmat('../prior_array.mat') ##Please download this matrix from 'https://drive.google.com/file/d/1XJY1uiAlbxyoA-V4Mx8L7UgOlXRHvO0j/view?usp=sharing'
         prior_array = sprior["prior_array"].astype(np.float32)
         # index_close = class_mapping[:close_classes]
         # index_open = class_mapping[close_classes:]
