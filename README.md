@@ -38,16 +38,9 @@ bash sh_s3_ntr.sh ## Stage of novel target recognition
 ```
 
 ### Data preparation:
-The pseudo labels generated from the UDA black box of BAPA-Net [1] can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1Y1ujTw9PzrX61jirSZgypMumQrjZXp18?usp=sharing)
-
-The pseudo labels generated from the SFDA black box of SFDASeg [2] can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1oi98NhGngXCoCQPhJ9IpX_GvRY1XgA2R?usp=sharing)
+The pseudo labels generated from the UDA black box of BAPA-Net [1] can be downloaded from [Google Drive]()
 
 [1] Yahao Liu, Jinhong Deng, Xinchen Gao, Wen Li, and Lixin Duan. Bapa-net: Boundary adaptation and prototype align- ment for cross-domain semantic segmentation. In ICCV, pages 8801–8811, 2021.
-
-[2] Jogendra Nath Kundu, Akshay Kulkarni, Amit Singh,Varun Jampani, and R Venkatesh Babu. Generalize then adapt: Source-free domain adaptive semantic segmentation. In ICCV, pages 7046–7056, 2021.
-
-### Pretrained model:
-You should download the pretrained model, warmup UDA model, and warmup SFDA model from [Google Drive](https://drive.google.com/drive/folders/1A6207JIEHx0tfaRNeJpEnYvfILX9HkpA?usp=sharing), and then put them in the './snapshots' folder for initialization. 
 
 ### Well trained model:
 You could download the well trained UDA and SFDA models from [Google Drive](https://drive.google.com/drive/folders/1A6207JIEHx0tfaRNeJpEnYvfILX9HkpA?usp=sharing).
