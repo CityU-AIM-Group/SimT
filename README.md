@@ -37,17 +37,6 @@ bash sh_s2_osn.sh ## Stage of handling open-set noises
 bash sh_s3_ntr.sh ## Stage of novel target recognition
 ```
 
-### Data preparation:
-The pseudo labels generated from the UDA black box of BAPA-Net [1] can be downloaded from [Google Drive]()
-
-[1] Yahao Liu, Jinhong Deng, Xinchen Gao, Wen Li, and Lixin Duan. Bapa-net: Boundary adaptation and prototype align- ment for cross-domain semantic segmentation. In ICCV, pages 8801–8811, 2021.
-
-### Well trained model:
-You could download the well trained UDA and SFDA models from [Google Drive](https://drive.google.com/drive/folders/1A6207JIEHx0tfaRNeJpEnYvfILX9HkpA?usp=sharing).
-
-## Log file
-Log file can be found [here](https://github.com/CityU-AIM-Group/SimT/blob/main/logs/)
-
 ## Citation:
 ```
 @inproceedings{guo2022simt,
