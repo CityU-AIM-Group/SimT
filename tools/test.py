@@ -26,7 +26,7 @@ import datetime
 import itertools
 import pandas as pd
 import _init_paths
-from evaluate_cityscapes import evaluate_simt, evaluate_warmup
+from evaluate_cityscapes import evaluate_warmup, evaluate_simt_unknown, evaluate_simt_3unknown, generate_pseudo_label16
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 
@@ -42,20 +42,20 @@ DATA_LIST_PATH = '../dataset/gta5_list/val.txt'
 IGNORE_LABEL = 255
 INPUT_SIZE = '1024,512'
 DATA_DIRECTORY_TARGET = '/home/xiaoqiguo2/scratch/UDA_Natural/Cityscapes'
-DATA_LIST_PATH_TARGET = '../dataset/cityscapes_list/pseudo_bapa.lst'
+DATA_LIST_PATH_TARGET = '../dataset/cityscapes_list/pseudo_adapt.lst'
 INPUT_SIZE_TARGET = '1024,512'
 LEARNING_RATE = 2.5e-4
 LEARNING_RATE_T = 2.5e-3
 MOMENTUM = 0.9
-NUM_CLASSES = 19
+NUM_CLASSES = 16
 OPEN_CLASSES = 15
 NUM_STEPS = 250000
 NUM_STEPS_STOP = 40000  # early stopping
 POWER = 0.9
 RANDOM_SEED = 1234
-RESTORE_FROM = '../snapshots/AdaptSeg.pth'
+RESTORE_FROM = '../snapshots/Synthia2Cityscapes_LSGAN.pth'
 SAVE_PRED_EVERY = 1000
-SNAPSHOT_DIR = '../snapshots/AdaptSegNet/'
+SNAPSHOT_DIR = '../snapshots/SimT/'
 WEIGHT_DECAY = 0.0005
 LOG_DIR = './log/'
 Threshold_high = 0.8
@@ -160,15 +160,8 @@ def get_arguments():
 args = get_arguments()
 # if not os.path.exists(args.log_dir):
 #     os.makedirs(args.log_dir)
-print('Leanring_rate: ', args.learning_rate)
-print('Leanring_rate_T: ', args.learning_rate_T)
+print('Closed-set class: ', args.num_classes)
 print('Open-set class: ', args.open_classes)
-print('Threshold_high: ', args.Threshold_high)
-print('Threshold_low: ', args.Threshold_low)
-print('lambda_Place: ', args.lambda_Place)
-print('lambda_Convex: ', args.lambda_Convex)
-print('lambda_Volume: ', args.lambda_Volume)
-print('lambda_Anchor: ', args.lambda_Anchor)
 print('restore_from: ', args.restore_from)
 
 def lr_poly(base_lr, iter, max_iter, power):
@@ -184,62 +177,27 @@ def adjust_learning_rate_T(optimizer, i_iter):
     lr = lr_poly(args.learning_rate_T, i_iter, args.num_steps, args.power)
     optimizer.param_groups[0]['lr'] = lr
 
-def plot_NTM(trans_mat, normalize=True, title='NTM1', cmap=plt.cm.Blues):
-    plt.figure()
-    plt.imshow(trans_mat, interpolation='nearest', cmap=cmap)
-    plt.colorbar()
-
-    thresh = trans_mat.max() / 2.
-    for i, j in itertools.product(range(trans_mat.shape[0]), range(trans_mat.shape[1])):
-        num = '{:.2f}'.format(trans_mat[i, j]) if normalize else int(trans_mat[i, j])
-        plt.text(j, i, num,
-                 fontsize=2, 
-                 verticalalignment='center',
-                 horizontalalignment="center",
-                 color="white" if np.float(num) > thresh else "black")
-    plt.savefig('../NTM_vis/'+title+'.png', transparent=True, dpi=600)
-
-def Placeholder_loss(pred, num_classes, open_classes, thres=None):
-    seg_loss = torch.nn.CrossEntropyLoss(ignore_index=255)
-    #### del maximum elements in prediction####
-    pseudo = torch.argmax(pred, dim=1).long()
-    pseudo_onehot = torch.eye(num_classes + open_classes)[pseudo].permute(0, 3, 1, 2).float().cuda()
-    zeros = torch.zeros_like(pseudo_onehot)
-    ones = torch.zeros_like(pseudo_onehot)
-    predict = torch.where(pseudo_onehot > zeros, -100. * ones, pred)
-
-    #### del pixels with armgmax < num_classes ####
-    ones = torch.ones_like(pseudo)
-    pseudo1 = torch.where(pseudo < num_classes * ones, pseudo, 255 * ones)
-    if thres is not None:
-        pred_max = torch.max(torch.softmax(pred.clone().detach(), dim=1), 1)[0]
-        pseudo1 = torch.where(pred_max > thres, pseudo1, 255 * ones)
-    loss_known = seg_loss(pred, pseudo1)
-
-    #### find out the maximum logit within open set classes as the label ####
-    predict_open = torch.zeros_like(predict)
-    predict_open[:,args.num_classes:,:,:] = predict[:,args.num_classes:,:,:].clone().detach()
-    Placeholder_y = torch.argmax(predict_open, dim=1)
-    Placeholder_y = torch.where(pseudo1 == 255 * ones, 255 * ones, Placeholder_y)
-
-    loss_unknown = seg_loss(predict, Placeholder_y)
-    return loss_known + args.lambda_Place * loss_unknown
-
 def main():
     cudnn.enabled = True
     gpu = args.gpu
 
     # Create network
-    pretrained_dict = torch.load(args.restore_from)
-    model = DeeplabMulti(num_classes=args.num_classes, open_classes=args.open_classes, openset=True).cuda()
+    pretrained_dict = torch.load(args.restore_from)#['model']
+    # print(args.restore_from)
+    # for k, v in pretrained_dict.items():
+    #     print(k, v.shape)
+    # xiaoqing
+    model = DeeplabMulti(num_classes=args.num_classes, open_classes=0, openset=False).cuda()
     net_dict = model.state_dict()
-    pretrained_dict = {k: v for k, v in pretrained_dict.items() if (k in net_dict)}
+    # pretrained_dict = {k: v for k, v in pretrained_dict.items() if (k in net_dict)}
     net_dict.update(pretrained_dict)
     model.load_state_dict(net_dict)
 
     now = datetime.datetime.now()
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
-    mIoU = evaluate_simt(model)
+    # mIoU = evaluate_warmup(model)
+    # mIoU = evaluate_simt_3unknown(model)
+    mIoU = generate_pseudo_label16(model)
     print('Finish Evaluation: '+time.asctime(time.localtime(time.time())))
 
 if __name__ == '__main__':
