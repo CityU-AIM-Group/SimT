@@ -1,6 +1,6 @@
 # SimT: Handling Open-set Noise for Domain Adaptive Semantic Segmentation
 
-by [Xiaoqing Guo](https://guo-xiaoqing.github.io/). Code coming soon.
+by [Xiaoqing Guo](https://guo-xiaoqing.github.io/). 
 
 ## Summary:
 
