@@ -32,8 +32,9 @@ Clone the repository:
 ```
 git clone https://github.com/Guo-Xiaoqing/SimT.git
 cd SimT 
-bash sh_warmup.sh ## Stage of warmup
-bash sh_simt.sh ## Stage of training with SimT
+bash sh_s1_warmup.sh ## Stage of warmup
+bash sh_s2_osn.sh ## Stage of handling open-set noises
+bash sh_s3_ntr.sh ## Stage of novel target recognition
 ```
 
 ### Data preparation:
