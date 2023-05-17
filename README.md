@@ -14,7 +14,7 @@ Two branches of the project:
 Contributions of [SimT-TPAMI](https://github.com/CityU-AIM-Group/SIGMA/tree/SimT-TPAMI23):
 - We not merely focus on alleviating the open-set label noises, but also extend SimT to novel target recognition task. To the best of our knowledge, we represent the first effort to solve the novel target recognition problem using noise transition matrix without the supervision from open-set classes. 
 - When handling mixed closed-set and open-set label noises, in addition to the previously proposed three regularizers, we further propose a new semantic constraint regularizer to estimate SimT with inter-class semantic relation guidance, thereby preventing trivial solution, meanwhile, benefiting the newly tackled novel target recognition task.
-- In novel target recognition task, we devise a C2OLC method that utilizes SimT to provide supervisions for open-set classes. Moreover, a SR loss is designed to preserve the semantic structure of closed-set and open-set class data distribution (**This SR loss is very simple yet efficient in novel class resognition. It can also be utilized in zero-shot learning problem directly.**).
+- In novel target recognition task, we devise a C2OLC method that utilizes SimT to provide supervisions for open-set classes. Moreover, a SR loss is designed to preserve the semantic structure of closed-set and open-set class data distribution (**This SR loss is very simple yet efficient in novel class resognition. It can be utilized in zero-shot learning problem directly.**).
 
 ### Framework:
 ![](https://github.com/CityU-AIM-Group/SimT/blob/main/network1.png)
