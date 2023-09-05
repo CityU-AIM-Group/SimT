@@ -39,10 +39,10 @@ The pseudo labels generated from the SFDA black box of SFDASeg [2] can be downlo
 [2] Jogendra Nath Kundu, Akshay Kulkarni, Amit Singh,Varun Jampani, and R Venkatesh Babu. Generalize then adapt: Source-free domain adaptive semantic segmentation. In ICCV, pages 7046–7056, 2021.
 
 ### Pretrained model:
-You should download the pretrained model, warmup UDA model, and warmup SFDA model from [Google Drive](https://drive.google.com/drive/folders/1A6207JIEHx0tfaRNeJpEnYvfILX9HkpA?usp=sharing), and then put them in the './snapshots' folder for initialization. 
+You should download the pretrained model, warmup UDA model, and warmup SFDA model from [Google Drive](https://drive.google.com/file/d/18do3btOhtW4q_9d24S9HsFQSvcI1p0iK/view?usp=sharing), and then put them in the './snapshots' folder for initialization. 
 
 ### Well trained model:
-You could download the well trained UDA and SFDA models from [Google Drive](https://drive.google.com/drive/folders/1A6207JIEHx0tfaRNeJpEnYvfILX9HkpA?usp=sharing).
+You could download the well trained UDA and SFDA models from [Google Drive](https://drive.google.com/file/d/18do3btOhtW4q_9d24S9HsFQSvcI1p0iK/view?usp=sharing).
 
 ## Log file
 Log file can be found [here](https://github.com/CityU-AIM-Group/SimT/blob/main/logs/)
